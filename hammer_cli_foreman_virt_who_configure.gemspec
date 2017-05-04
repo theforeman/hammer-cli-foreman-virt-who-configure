@@ -23,5 +23,5 @@ EOF
   s.require_paths = ["lib"]
 
   s.add_dependency 'hammer_cli', '>= 0.4.0'
-
+  s.add_dependency 'hammer_cli_foreman'
 end
