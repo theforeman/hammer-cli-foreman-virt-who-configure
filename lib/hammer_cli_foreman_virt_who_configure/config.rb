@@ -95,6 +95,48 @@ module HammerCLIForemanVirtWhoConfigure
       build_options
     end
 
+    class FetchCommand < HammerCLIForeman::Command
+      command_name "fetch"
+      action :deploy_script
+
+      option ['--output', '-o'], 'FILE', _('File where the script will be written.')
+
+      def print_data(data)
+        if option_output
+          File.write(File.expand_path(option_output), data)
+        else
+          puts data
+        end
+      end
+
+      def transform_format(data)
+        data['virt_who_config_script']
+      end
+
+      build_options
+    end
+
+    class DeployCommand < HammerCLIForeman::Command
+      command_name "deploy"
+      action :deploy_script
+
+      def execute
+        script = send_request
+        if system(script)
+          HammerCLI::EX_OK
+        else
+          HammerCLI::EX_SOFTWARE
+        end
+      end
+
+      def transform_format(data)
+        data['virt_who_config_script']
+      end
+
+      build_options
+    end
+
+
     autoload_subcommands
   end
 end
