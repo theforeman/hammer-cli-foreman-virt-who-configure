@@ -136,6 +136,26 @@ module HammerCLIForemanVirtWhoConfigure
       build_options
     end
 
+    class CreateCommand < HammerCLIForeman::CreateCommand
+      success_message _('Virt Who configuration [%{name}] created')
+      failure_message _('Could not create the Virt Who configuration')
+
+      build_options
+    end
+
+    class UpdateCommand < HammerCLIForeman::UpdateCommand
+      success_message _('Virt Who configuration [%{name}] updated')
+      failure_message _('Could not create the Virt Who configuration')
+
+      build_options
+    end
+
+    class DeleteCommand < HammerCLIForeman::DeleteCommand
+      success_message _('Virt Who configuration deleted')
+      failure_message _('Could not delete the Virt Who configuration')
+
+      build_options
+    end
 
     autoload_subcommands
   end
