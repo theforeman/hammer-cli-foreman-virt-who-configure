@@ -1,4 +1,5 @@
 require 'hammer_cli'
+require 'hammer_cli_foreman'
 
 module HammerCLIForemanVirtWhoConfigure
 

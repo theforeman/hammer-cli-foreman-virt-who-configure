@@ -7,7 +7,12 @@ module HammerCLIForemanVirtWhoConfigure
     resource :configs
 
     def self.format_interval(interval)
-      _('every %s hours') % (interval / 60)
+      hr_interval = (interval / 60)
+      if hr_interval <= 1
+        _('every hour')
+      else
+        _('every %s hours') % (interval / 60)
+      end
     end
 
     def self.format_status(status)
@@ -87,8 +92,16 @@ module HammerCLIForemanVirtWhoConfigure
         conf['_status'] = VirtWhoConfig.format_status(conf['status'])
         conf['_listing_mode'] = VirtWhoConfig.format_listing_mode(conf['listing_mode'])
         # Show host lists only in relevant filtering modes
-        conf['whitelist'] = nil if conf['listing_mode'] != MODE_WHITELIST
-        conf['blacklist'] = nil if conf['listing_mode'] != MODE_BLACKLIST
+        if conf['listing_mode'] != MODE_WHITELIST
+          conf['whitelist'] = nil
+        else
+          conf['whitelist'] ||= " "
+        end
+        if conf['listing_mode'] != MODE_BLACKLIST
+          conf['blacklist'] = nil
+        else
+          conf['blacklist'] ||= " "
+        end
         conf
       end
 
@@ -122,7 +135,7 @@ module HammerCLIForemanVirtWhoConfigure
 
       def execute
         script = send_request
-        if system(script)
+        if system_caller.system(script)
           HammerCLI::EX_OK
         else
           HammerCLI::EX_SOFTWARE
@@ -133,10 +146,36 @@ module HammerCLIForemanVirtWhoConfigure
         data['virt_who_config_script']
       end
 
+      def system_caller
+        context[:system_caller] || Kernel
+      end
+
       build_options
     end
 
+    module UpdateCommons
+      FILTER_MAPPING = {
+        'none' => 0,
+        'whitelist' => 1,
+        'blacklist' => 2
+      }
+
+      def self.included(base)
+        base.option '--filtering-mode', 'MODE', _('Hypervisor filtering mode'),
+          :format => HammerCLI::Options::Normalizers::Enum.new(FILTER_MAPPING.keys)
+      end
+
+      def request_params
+        params = super
+        mode = params['foreman_virt_who_configure_config']['filtering_mode']
+        params['foreman_virt_who_configure_config']['filtering_mode'] = FILTER_MAPPING[mode] if mode
+        params
+      end
+    end
+
     class CreateCommand < HammerCLIForeman::CreateCommand
+      include UpdateCommons
+
       success_message _('Virt Who configuration [%{name}] created')
       failure_message _('Could not create the Virt Who configuration')
 
@@ -144,6 +183,8 @@ module HammerCLIForemanVirtWhoConfigure
     end
 
     class UpdateCommand < HammerCLIForeman::UpdateCommand
+      include UpdateCommons
+
       success_message _('Virt Who configuration [%{name}] updated')
       failure_message _('Could not create the Virt Who configuration')
 
