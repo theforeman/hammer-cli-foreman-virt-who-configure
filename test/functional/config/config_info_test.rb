@@ -23,7 +23,7 @@ def test_interval_field(cmd, api_value, output_value)
 end
 
 def test_filter_field(cmd, api_value, output_value)
-  test_output_field(cmd, { "listing_mode" => api_value }, 'Filtering', output_value)
+  test_output_field(cmd, { "filtering_mode" => api_value }, 'Filtering', output_value)
 end
 
 describe "virt-who-config" do
@@ -69,12 +69,12 @@ describe "virt-who-config" do
         test_filter_field(@cmd, 0, 'Unlimited')
       end
       it "hides whitelist field" do
-        expect_config_search(config("listing_mode" => 0))
+        expect_config_search(config("filtering_mode" => 0))
         refute_match('Excluded hosts:', run_cmd(@cmd).out)
       end
 
       it "hides blacklist field" do
-        expect_config_search(config("listing_mode" => 0))
+        expect_config_search(config("filtering_mode" => 0))
         refute_match('Filtered hosts:', run_cmd(@cmd).out)
       end
     end
@@ -85,7 +85,7 @@ describe "virt-who-config" do
       end
 
       it "shows whitelist field" do
-        expect_config_search(config("listing_mode" => 1, 'whitelist' => 'host1,hostb'))
+        expect_config_search(config("filtering_mode" => 1, 'whitelist' => 'host1,hostb'))
 
         output = FieldMatcher.new('Excluded hosts', 'host1,hostb')
 
@@ -94,12 +94,12 @@ describe "virt-who-config" do
       end
 
       it "shows empty whitelist field" do
-        expect_config_search(config("listing_mode" => 1, 'whitelist' => nil))
+        expect_config_search(config("filtering_mode" => 1, 'whitelist' => nil))
         assert_match('Excluded hosts:', run_cmd(@cmd).out)
       end
 
       it "hides blacklist field" do
-        expect_config_search(config("listing_mode" => 1))
+        expect_config_search(config("filtering_mode" => 1))
         refute_match('Filtered hosts:', run_cmd(@cmd).out)
       end
     end
@@ -110,7 +110,7 @@ describe "virt-who-config" do
       end
 
       it "shows blacklist field" do
-        expect_config_search(config("listing_mode" => 2, 'blacklist' => 'host1,hostb'))
+        expect_config_search(config("filtering_mode" => 2, 'blacklist' => 'host1,hostb'))
 
         output = FieldMatcher.new('Filtered hosts', 'host1,hostb')
 
@@ -119,12 +119,12 @@ describe "virt-who-config" do
       end
 
       it "shows empty blacklist field" do
-        expect_config_search(config("listing_mode" => 2, 'whitelist' => nil))
+        expect_config_search(config("filtering_mode" => 2, 'whitelist' => nil))
         assert_match('Filtered hosts:', run_cmd(@cmd).out)
       end
 
       it "hides whitelist field" do
-        expect_config_search(config("listing_mode" => 2))
+        expect_config_search(config("filtering_mode" => 2))
         refute_match('Excluded hosts:', run_cmd(@cmd).out)
       end
     end
@@ -134,12 +134,12 @@ describe "virt-who-config" do
         test_filter_field(@cmd, nil, 'Unknown listing mode')
       end
       it "hides whitelist field" do
-        expect_config_search(config("listing_mode" => 0))
+        expect_config_search(config("filtering_mode" => 0))
         refute_match('Excluded hosts:', run_cmd(@cmd).out)
       end
 
       it "hides blacklist field" do
-        expect_config_search(config("listing_mode" => 0))
+        expect_config_search(config("filtering_mode" => 0))
         refute_match('Filtered hosts:', run_cmd(@cmd).out)
       end
     end

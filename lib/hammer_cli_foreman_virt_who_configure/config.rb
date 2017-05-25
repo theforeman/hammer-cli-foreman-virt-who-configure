@@ -1,3 +1,5 @@
+require 'hammer_cli_foreman_virt_who_configure/system_caller'
+
 module HammerCLIForemanVirtWhoConfigure
   MODE_UNLIMITED = 0
   MODE_WHITELIST = 1
@@ -28,7 +30,7 @@ module HammerCLIForemanVirtWhoConfigure
       end
     end
 
-    def self.format_listing_mode(mode)
+    def self.format_filtering_mode(mode)
       case mode
         when MODE_UNLIMITED
           _('Unlimited')
@@ -77,7 +79,7 @@ module HammerCLIForemanVirtWhoConfigure
         label _('Connection') do
           field :satellite_url, _('Satellite server')
           field :hypervisor_id, _('Hypervisor ID')
-          field :_listing_mode, _('Filtering')
+          field :_filtering_mode, _('Filtering')
           field :blacklist, _('Filtered hosts'), Fields::Field, :hide_blank => true
           field :whitelist, _('Excluded hosts'), Fields::Field, :hide_blank => true
           field :debug, _('Debug mode'), Fields::Boolean
@@ -90,14 +92,14 @@ module HammerCLIForemanVirtWhoConfigure
       def extend_data(conf)
         conf['_interval'] = VirtWhoConfig.format_interval(conf['interval'])
         conf['_status'] = VirtWhoConfig.format_status(conf['status'])
-        conf['_listing_mode'] = VirtWhoConfig.format_listing_mode(conf['listing_mode'])
+        conf['_filtering_mode'] = VirtWhoConfig.format_filtering_mode(conf['filtering_mode'])
         # Show host lists only in relevant filtering modes
-        if conf['listing_mode'] != MODE_WHITELIST
+        if conf['filtering_mode'] != MODE_WHITELIST
           conf['whitelist'] = nil
         else
           conf['whitelist'] ||= " "
         end
-        if conf['listing_mode'] != MODE_BLACKLIST
+        if conf['filtering_mode'] != MODE_BLACKLIST
           conf['blacklist'] = nil
         else
           conf['blacklist'] ||= " "
@@ -112,13 +114,28 @@ module HammerCLIForemanVirtWhoConfigure
       command_name "fetch"
       action :deploy_script
 
+      failure_message _('Could not fetch the Virt Who configuration')
+
       option ['--output', '-o'], 'FILE', _('File where the script will be written.')
 
-      def print_data(data)
+      def execute
+        data = send_request
         if option_output
-          File.write(File.expand_path(option_output), data)
+          path = File.expand_path(option_output)
+          if File.exists?(path)
+            # this could be a security issue, the file should be readable only by the user
+            output.print_error(
+              _('Could not save the script'),
+              _("File at %{path} already exists, please specify a different path.") % { :path => path }
+            )
+            return HammerCLI::EX_USAGE
+          else
+            File.write(path, data, { :perm => 0700, :mode => File::RDWR|File::CREAT|File::EXCL })
+            return HammerCLI::EX_OK
+          end
         else
           puts data
+          return HammerCLI::EX_OK
         end
       end
 
@@ -132,6 +149,8 @@ module HammerCLIForemanVirtWhoConfigure
     class DeployCommand < HammerCLIForeman::Command
       command_name "deploy"
       action :deploy_script
+
+      failure_message _('Could not deploy the Virt Who configuration')
 
       def execute
         script = send_request
@@ -147,7 +166,7 @@ module HammerCLIForemanVirtWhoConfigure
       end
 
       def system_caller
-        context[:system_caller] || Kernel
+        context[:system_caller] || HammerCLIForemanVirtWhoConfigure::SystemCaller.new
       end
 
       build_options

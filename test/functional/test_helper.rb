@@ -54,7 +54,7 @@ def config(attrs = {})
     "status" => "unknown",
     "last_report_at" => nil,
     "out_of_date_at" => nil,
-    "listing_mode" => 0,
+    "filtering_mode" => 0,
     "id" => 11
   }.merge(attrs)
 end
