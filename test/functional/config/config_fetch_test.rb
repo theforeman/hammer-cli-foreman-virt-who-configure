@@ -38,7 +38,7 @@ describe "virt-who-config" do
       end
     end
 
-    it "refuses to store the script into existing file" do
+    it "refuses to store the script into an existing file" do
       file = Tempfile.new
       begin
         params = ['--name=test', '--output', file.path]

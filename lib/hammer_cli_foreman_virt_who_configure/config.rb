@@ -80,8 +80,8 @@ module HammerCLIForemanVirtWhoConfigure
           field :satellite_url, _('Satellite server')
           field :hypervisor_id, _('Hypervisor ID')
           field :_filtering_mode, _('Filtering')
-          field :blacklist, _('Filtered hosts'), Fields::Field, :hide_blank => true
-          field :whitelist, _('Excluded hosts'), Fields::Field, :hide_blank => true
+          field :blacklist, _('Excluded hosts'), Fields::Field, :hide_blank => true
+          field :whitelist, _('Filtered hosts'), Fields::Field, :hide_blank => true
           field :debug, _('Debug mode'), Fields::Boolean
           field :proxy, _('HTTP proxy')
           field :no_proxy, _('Ignore proxy')
@@ -148,6 +148,7 @@ module HammerCLIForemanVirtWhoConfigure
 
     class DeployCommand < HammerCLIForeman::Command
       command_name "deploy"
+      desc _('Download and execute script for the specified virt-who configuration')
       action :deploy_script
 
       failure_message _('Could not deploy the Virt Who configuration')
