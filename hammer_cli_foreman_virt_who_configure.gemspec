@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   Plugin for configuring Virt Who
 EOF
 
-  s.files            = Dir['{lib,doc,test,locale,config}/**/*', 'README*']
+  s.files            = Dir['{lib,doc,test,config}/**/*', 'README*']
   s.test_files       = Dir['{test}/**/*']
   s.extra_rdoc_files = Dir['{doc}/**/*', 'README*']
   s.require_paths = ["lib"]
