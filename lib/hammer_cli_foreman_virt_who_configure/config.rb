@@ -69,7 +69,6 @@ module HammerCLIForemanVirtWhoConfigure
           field :hypervisor_type, _('Hypervisor type')
           field :hypervisor_server, _('Hypervisor server')
           field :hypervisor_username, _('Hypervisor username')
-          field :hypervisor_password, _('Hypervisor password')
           field :_status, _('Status')
         end
         label _('Schedule') do
