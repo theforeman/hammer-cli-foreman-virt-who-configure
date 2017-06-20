@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer-cli-foreman-virt-who-configure 0.0.1\n"
+"Project-Id-Version: hammer-cli-foreman-virt-who-configure 0.0.2\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2017-05-19 13:34+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -77,9 +77,6 @@ msgstr ""
 msgid "Hypervisor username"
 msgstr ""
 
-msgid "Hypervisor password"
-msgstr ""
-
 msgid "Schedule"
 msgstr ""
 
@@ -95,10 +92,10 @@ msgstr ""
 msgid "Filtering"
 msgstr ""
 
-msgid "Filtered hosts"
+msgid "Excluded hosts"
 msgstr ""
 
-msgid "Excluded hosts"
+msgid "Filtered hosts"
 msgstr ""
 
 msgid "Debug mode"
@@ -110,7 +107,22 @@ msgstr ""
 msgid "Ignore proxy"
 msgstr ""
 
+msgid "Could not fetch the Virt Who configuration"
+msgstr ""
+
 msgid "File where the script will be written."
+msgstr ""
+
+msgid "Could not save the script"
+msgstr ""
+
+msgid "File at %{path} already exists, please specify a different path."
+msgstr ""
+
+msgid "Download and execute script for the specified virt-who configuration"
+msgstr ""
+
+msgid "Could not deploy the Virt Who configuration"
 msgstr ""
 
 msgid "Hypervisor filtering mode"
