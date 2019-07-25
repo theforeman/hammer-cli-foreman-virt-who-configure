@@ -81,6 +81,8 @@ module HammerCLIForemanVirtWhoConfigure
           field :_filtering_mode, _('Filtering')
           field :blacklist, _('Excluded hosts'), Fields::Field, :hide_blank => true
           field :whitelist, _('Filtered hosts'), Fields::Field, :hide_blank => true
+          field :filter_host_parents, _('Filter host parents'), Fields::Field, :hide_blank => true
+          field :exclude_host_parents, _('Exclude host parents'), Fields::Field, :hide_blank => true
           field :debug, _('Debug mode'), Fields::Boolean
           field :proxy, _('HTTP proxy')
           field :no_proxy, _('Ignore proxy')
