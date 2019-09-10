@@ -117,7 +117,7 @@ module HammerCLIForemanVirtWhoConfigure
 
       failure_message _('Could not fetch the Virt Who configuration')
 
-      option ['--output', '-o'], 'FILE', _('File where the script will be written.')
+      option ['-o', '--output'], 'FILE', _('File where the script will be written')
 
       def execute
         data = send_request
