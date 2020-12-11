@@ -84,8 +84,14 @@ module HammerCLIForemanVirtWhoConfigure
           field :filter_host_parents, _('Filter host parents'), Fields::Field, :hide_blank => true
           field :exclude_host_parents, _('Exclude host parents'), Fields::Field, :hide_blank => true
           field :debug, _('Debug mode'), Fields::Boolean
-          field :proxy, _('HTTP proxy')
-          field :no_proxy, _('Ignore proxy')
+          field :no_proxy, _('Ignore proxy'), Fields::Field, :hide_blank => true
+        end
+        label _('HTTP Proxy') do
+          from :http_proxy do
+            field :id, _('HTTP proxy ID'), Fields::Field, :hide_blank => true
+            field :name, _('HTTP proxy name'), Fields::Field, :hide_blank => true
+            field :url, _('HTTP proxy URL'), Fields::Field, :hide_blank => true
+          end
         end
         HammerCLIForeman::References.taxonomies(self)
       end
