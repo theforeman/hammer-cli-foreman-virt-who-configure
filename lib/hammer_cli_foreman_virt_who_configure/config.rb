@@ -69,6 +69,7 @@ module HammerCLIForemanVirtWhoConfigure
           field :hypervisor_type, _('Hypervisor type')
           field :hypervisor_server, _('Hypervisor server')
           field :hypervisor_username, _('Hypervisor username')
+          field :kubeconfig_path, _('Configuration file'), Fields::Field, :hide_blank => true
           field :_status, _('Status')
         end
         label _('Schedule') do
