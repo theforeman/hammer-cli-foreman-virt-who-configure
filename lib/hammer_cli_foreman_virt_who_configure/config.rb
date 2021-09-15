@@ -181,6 +181,7 @@ module HammerCLIForemanVirtWhoConfigure
       build_options
     end
 
+
     module UpdateCommons
       FILTER_MAPPING = {
         'none' => 0,
@@ -201,8 +202,37 @@ module HammerCLIForemanVirtWhoConfigure
       end
     end
 
+    module Kubevirt
+      HYPERVISOR_SERVER = ''.freeze
+      HYPERVISOR_USERNAME = ''.freeze
+
+      def self.included(base)
+        # Looking how the UI works to add this, I don't see a param on the controller side, so adding a custom option here like we do with the UI
+        base.option '--kubeconfig-path', 'KUBECONFIG_PATH', _('Configuration file containing details about how to connect to the cluster and authentication details')
+      end
+
+      def request_params
+        params = super
+        kube = params['foreman_virt_who_configure_config']['hypervisor_type']
+        params['foreman_virt_who_configure_config']['hypervisor_username'] = HYPERVISOR_USERNAME if kube == 'kubevirt'
+        params['foreman_virt_who_configure_config']['hypervisor_server'] = HYPERVISOR_SERVER if kube == 'kubevirt'
+        config = option_kubeconfig_path
+        if config.nil? && kube == 'kubevirt' && action != :update
+          puts 'kubeconfig_path parameter is required when using Kubevirt hypervisor type.'
+          exit(HammerCLI::EX_USAGE)
+        end
+        if config && kube != 'kubevirt' && action != :update
+          # Adding validation since I found you can pass in kubeconfig param to other hypervisor types
+          puts 'kubeconfig_path parameter is only used when using Kubevirt hypervisor type.'
+          exit(HammerCLI::EX_USAGE)
+        end
+        params
+      end
+    end
+
     class CreateCommand < HammerCLIForeman::CreateCommand
       include UpdateCommons
+      include Kubevirt
 
       success_message _('Virt Who configuration [%{name}] created')
       failure_message _('Could not create the Virt Who configuration')
@@ -212,6 +242,7 @@ module HammerCLIForemanVirtWhoConfigure
 
     class UpdateCommand < HammerCLIForeman::UpdateCommand
       include UpdateCommons
+      include Kubevirt
 
       success_message _('Virt Who configuration [%{name}] updated')
       failure_message _('Could not create the Virt Who configuration')
