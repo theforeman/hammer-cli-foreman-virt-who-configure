@@ -70,6 +70,9 @@ module HammerCLIForemanVirtWhoConfigure
           field :hypervisor_server, _('Hypervisor server')
           field :hypervisor_username, _('Hypervisor username')
           field :kubeconfig_path, _('Configuration file'), Fields::Field, :hide_blank => true
+          field :prism_flavor, _('AHV Prism flavor'), Fields::Field, :hide_blank => true
+          field :ahv_update_interval, _('AHV update frequency'), Fields::Field, :hide_blank => true
+          field :ahv_internal_debug, _('Enable AHV debug'), Fields::Boolean
           field :_status, _('Status')
         end
         label _('Schedule') do
