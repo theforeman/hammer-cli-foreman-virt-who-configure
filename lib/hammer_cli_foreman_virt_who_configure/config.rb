@@ -43,6 +43,12 @@ module HammerCLIForemanVirtWhoConfigure
       end
     end
 
+    def self.validate_hypervisor_options(conf)
+      options = conf["hypervisor_type"] == 'kubevirt' ? %w(hypervisor_server hypervisor_username) : %w(kubeconfig_path)
+      options.append("prism_flavor", "ahv_update_interval", "ahv_internal_debug") unless conf["hypervisor_type"] == 'ahv'
+      conf.delete_if { |k, v| options.include?(k) }
+    end
+
     class ListCommand < HammerCLIForeman::ListCommand
       output do
         field :id, _('Id')
@@ -115,7 +121,7 @@ module HammerCLIForemanVirtWhoConfigure
         else
           conf['blacklist'] ||= " "
         end
-        conf
+        VirtWhoConfig.validate_hypervisor_options(conf)
       end
 
       build_options
