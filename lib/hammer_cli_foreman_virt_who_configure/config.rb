@@ -45,7 +45,7 @@ module HammerCLIForemanVirtWhoConfigure
 
     def self.validate_hypervisor_options(conf)
       options = conf["hypervisor_type"] == 'kubevirt' ? %w(hypervisor_server hypervisor_username) : %w(kubeconfig_path)
-      options.append("prism_flavor", "ahv_update_interval", "ahv_internal_debug") unless conf["hypervisor_type"] == 'ahv'
+      options.append("prism_flavor", "ahv_internal_debug") unless conf["hypervisor_type"] == 'ahv'
       conf.delete_if { |k, v| options.include?(k) }
     end
 
@@ -77,7 +77,6 @@ module HammerCLIForemanVirtWhoConfigure
           field :hypervisor_username, _('Hypervisor username')
           field :kubeconfig_path, _('Configuration file'), Fields::Field, :hide_blank => true
           field :prism_flavor, _('AHV Prism flavor'), Fields::Field, :hide_blank => true
-          field :ahv_update_interval, _('AHV update frequency'), Fields::Field, :hide_blank => true
           field :ahv_internal_debug, _('Enable AHV debug'), Fields::Boolean
           field :_status, _('Status')
         end
