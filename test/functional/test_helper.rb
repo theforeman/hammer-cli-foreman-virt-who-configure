@@ -7,7 +7,7 @@ include HammerCLI::Testing::CommandAssertions
 include HammerCLI::Testing::OutputMatchers
 
 def missing_arguments_result(argument_name)
-  HammerCLI::Testing::CommandAssertions::CommandExpectation.new('', /Missing arguments for.*\[#{argument_name}\]/, HammerCLI::EX_USAGE)
+  HammerCLI::Testing::CommandAssertions::CommandExpectation.new('', /Missing arguments for.*#{argument_name}/, HammerCLI::EX_USAGE)
 end
 
 def assert_requires_argument(cmd, params, required_argument_name)

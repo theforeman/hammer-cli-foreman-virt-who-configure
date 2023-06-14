@@ -29,42 +29,42 @@ describe "virt-who-config" do
 
     it "requires --filtering-mode" do
       params = hash_to_opts(@required_args, :reject => :filtering_mode)
-      assert_requires_argument(@cmd, params, 'filtering_mode')
+      assert_requires_argument(@cmd, params, 'filtering-mode')
     end
 
     it "requires --hypervisor-id" do
       params = hash_to_opts(@required_args, :reject => :hypervisor_id)
-      assert_requires_argument(@cmd, params, 'hypervisor_id')
+      assert_requires_argument(@cmd, params, 'hypervisor-id')
     end
 
     it "validates --hypervisor-id values" do
       params = hash_to_opts(@required_args.merge(:hypervisor_id => 'other'))
-      assert_usage_error(@cmd, params, "option '--hypervisor-id': value must be one of 'hostname', 'uuid', 'hwuuid'")
+      assert_usage_error(@cmd, params, "Option '--hypervisor-id': Value must be one of 'hostname', 'uuid', 'hwuuid'..")
     end
 
     it "requires --hypervisor-type" do
       params = hash_to_opts(@required_args, :reject => :hypervisor_type)
-      assert_requires_argument(@cmd, params, 'hypervisor_type')
+      assert_requires_argument(@cmd, params, 'hypervisor-type')
     end
 
     it "validates --hypervisor-type values" do
       params = hash_to_opts(@required_args.merge(:hypervisor_type => 'other'))
-      assert_usage_error(@cmd, params, "option '--hypervisor-type': value must be one of 'esx', 'rhevm', 'hyperv', 'xen', 'libvirt'")
+      assert_usage_error(@cmd, params, "Option '--hypervisor-type': Value must be one of 'esx', 'rhevm', 'hyperv', 'xen', 'libvirt'..")
     end
 
     it "requires --hypervisor-server" do
       params = hash_to_opts(@required_args, :reject => :hypervisor_server)
-      assert_requires_argument(@cmd, params, 'hypervisor_server')
+      assert_requires_argument(@cmd, params, 'hypervisor-server')
     end
 
     it "requires --hypervisor-username" do
       params = hash_to_opts(@required_args, :reject => :hypervisor_username)
-      assert_requires_argument(@cmd, params, 'hypervisor_username')
+      assert_requires_argument(@cmd, params, 'hypervisor-username')
     end
 
     it "requires --satellite-url" do
       params = hash_to_opts(@required_args, :reject => :satellite_url)
-      assert_requires_argument(@cmd, params, 'satellite_url')
+      assert_requires_argument(@cmd, params, 'satellite-url')
     end
 
     it "sends values to api" do
