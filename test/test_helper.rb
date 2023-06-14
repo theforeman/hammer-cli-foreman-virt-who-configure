@@ -1,6 +1,7 @@
 require 'minitest/autorun'
 require 'minitest/spec'
 require "mocha/setup"
+require "mocha/minitest"
 
 require 'hammer_cli'
 require 'hammer_cli_foreman/testing/api_expectations'

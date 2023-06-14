@@ -16,7 +16,8 @@ describe "SystemCaller" do
 
   it 'uses tempfile for executing the script' do
     tmp_file = CaptureContentTempfile.new
-    Kernel.expects(:system).with("/usr/bin/bash #{tmp_file.path}")
+    vars = HammerCLIForemanVirtWhoConfigure::SystemCaller.new.clean_env_vars
+    Kernel.expects(:system).with(vars, "/usr/bin/bash #{tmp_file.path}", unsetenv_others: true)
 
     sys_caller = HammerCLIForemanVirtWhoConfigure::SystemCaller.new(tmp_file)
     sys_caller.system(script)

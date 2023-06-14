@@ -138,7 +138,7 @@ module HammerCLIForemanVirtWhoConfigure
         data = send_request
         if option_output
           path = File.expand_path(option_output)
-          if File.exists?(path)
+          if File.exist?(path)
             # this could be a security issue, the file should be readable only by the user
             output.print_error(
               _('Could not save the script'),
@@ -146,7 +146,7 @@ module HammerCLIForemanVirtWhoConfigure
             )
             return HammerCLI::EX_USAGE
           else
-            File.write(path, data, { :perm => 0700, :mode => File::RDWR|File::CREAT|File::EXCL })
+            File.write(path, data, perm: 0700, mode: File::RDWR|File::CREAT|File::EXCL)
             return HammerCLI::EX_OK
           end
         else
