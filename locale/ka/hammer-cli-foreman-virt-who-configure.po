@@ -1,0 +1,179 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the hammer-cli-foreman-virt-who-configure package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Temuri Doghonadze <temuri.doghonadze@gmail.com>, 2022
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: hammer-cli-foreman-virt-who-configure 0.0.9\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-20 10:36+0200\n"
+"PO-Revision-Date: 2017-06-01 14:23+0000\n"
+"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>, 2022\n"
+"Language-Team: Georgian (https://app.transifex.com/foreman/teams/114/ka/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ka\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+msgid "Manage Virt Who configurations"
+msgstr "Virt-who-ის კონფიგურაციების მართვა"
+
+msgid "every hour"
+msgstr "ყოველ საათში"
+
+msgid "every %s hours"
+msgstr "ყოველ %s საათში"
+
+msgid "No Report Yet"
+msgstr "ანგარიშების გარეშე"
+
+msgid "OK"
+msgstr "დიახ"
+
+msgid "Error"
+msgstr "შეცდომა"
+
+msgid "Unknown configuration status"
+msgstr "კონფიგურაციის უცნობი სტატუსი"
+
+msgid "Unlimited"
+msgstr "შეუზღუდავი"
+
+msgid "Whitelist"
+msgstr "თეთრი სია"
+
+msgid "Blacklist"
+msgstr "შავი სია"
+
+msgid "Unknown listing mode"
+msgstr "სიის გამოტანის უცნობი რეჟიმი"
+
+msgid "Id"
+msgstr "ID"
+
+msgid "Name"
+msgstr "სახელი"
+
+msgid "Interval"
+msgstr "ინტერვალი"
+
+msgid "Status"
+msgstr "სტატუსი"
+
+msgid "Last Report At"
+msgstr "ბოლო ანგარიშის დრო"
+
+msgid "General information"
+msgstr "ზოგადი ინფორმაცია"
+
+msgid "Hypervisor type"
+msgstr "ჰაიპერვაიზორის ტიპი"
+
+msgid "Hypervisor server"
+msgstr "ჰაიპერვაიზორის სერვერი"
+
+msgid "Hypervisor username"
+msgstr "ჰაიპერვაიზორის მომხმარებლის სახელი"
+
+msgid "Schedule"
+msgstr "განრიგი"
+
+msgid "Connection"
+msgstr "კავშირი"
+
+msgid "Satellite server"
+msgstr "Satellite-ის სერვერი"
+
+msgid "Hypervisor ID"
+msgstr "ჰაიპერვაიზორის ID"
+
+msgid "Filtering"
+msgstr "გაფილტვრა"
+
+msgid "Excluded hosts"
+msgstr "გამორიცხული ჰოსტები"
+
+msgid "Filtered hosts"
+msgstr "გაფილტრული ჰოსტები"
+
+msgid "Debug mode"
+msgstr "გამართვის რეჟიმი"
+
+msgid "HTTP proxy"
+msgstr "HTTP პროქსი"
+
+msgid "Ignore proxy"
+msgstr "პროქსის იგნორი"
+
+msgid "Could not fetch the Virt Who configuration"
+msgstr "Virt-who-ის კონფიგურაცის გამოთხოვის შეცდომა"
+
+msgid "File where the script will be written."
+msgstr "ფაილი, სადაც სკრიპტი ჩაიწერება."
+
+msgid "Could not save the script"
+msgstr "სკრიპტის შენახვის შეცდომა"
+
+msgid "File at %{path} already exists, please specify a different path."
+msgstr "ფაილი %{path} -ში უკვე არსებობს. აირჩიეთ სხვა ბილიკი."
+
+msgid "Download and execute script for the specified virt-who configuration"
+msgstr ""
+"Virt-who-ს მითითებული კონფიგურაციის განშლის სკრიპტის გადმოწერა და გაშვება"
+
+msgid "Could not deploy the Virt Who configuration"
+msgstr "Virt-who-ის კონფიგურაცის შექმნის გაშლის შეცდომა"
+
+msgid "Hypervisor filtering mode"
+msgstr "ჰაიპერვაიზორის გაფილტვრის რეჟიმი"
+
+msgid "Virt Who configuration [%{name}] created"
+msgstr "Virt-who-ის კონფიგურაცია [%{name}] შეიქმნა"
+
+msgid "Could not create the Virt Who configuration"
+msgstr "Virt-who-ის კონფიგურაცის შექმნის შეცდომა"
+
+msgid "Virt Who configuration [%{name}] updated"
+msgstr "Virt-who-ის კონფიგურაცია [%{name}] განახლდა"
+
+msgid "Virt Who configuration deleted"
+msgstr "Virt-who-ის კონფიგურაცის წაიშალა"
+
+msgid "Could not delete the Virt Who configuration"
+msgstr "Virt-who-ის კონფიგურაცის წაშლის შეცდომა"
+
+msgid "Configuration file"
+msgstr ""
+
+msgid "AHV Prism flavor"
+msgstr ""
+
+msgid "Enable AHV debug"
+msgstr ""
+
+msgid "Filter host parents"
+msgstr ""
+
+msgid "Exclude host parents"
+msgstr ""
+
+msgid "HTTP Proxy"
+msgstr ""
+
+msgid "HTTP proxy ID"
+msgstr ""
+
+msgid "HTTP proxy name"
+msgstr ""
+
+msgid "HTTP proxy URL"
+msgstr ""
+
+msgid "File where the script will be written"
+msgstr ""

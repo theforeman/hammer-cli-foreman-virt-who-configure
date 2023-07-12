@@ -1,144 +1,181 @@
-# Japanese translations for hammer-cli-foreman-virt-who-configure package.
-# Copyright (C) 2017 THE PACKAGE'S COPYRIGHT HOLDER
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the hammer-cli-foreman-virt-who-configure package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# e93ed3aa97dec2eb31063731872555fc_1460a05 <71305a0095156d8e18373a5b7cfeb79e_8587>, 2017
+# 0868a4d1af5275b3f70b0a6dac4c99a4, 2017
+# Bryan Kearney <bryan.kearney@gmail.com>, 2017
+# Amit Upadhye <aupadhye@redhat.com>, 2022
+#
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer-cli-foreman-virt-who-configure 0.0.2\n"
+"Project-Id-Version: hammer-cli-foreman-virt-who-configure 0.0.9\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-05-19 13:34+0200\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Japanese\n"
-"Language: ja\n"
+"POT-Creation-Date: 2017-06-20 10:36+0200\n"
+"PO-Revision-Date: 2017-06-01 14:23+0000\n"
+"Last-Translator: Amit Upadhye <aupadhye@redhat.com>, 2022\n"
+"Language-Team: Japanese (https://app.transifex.com/foreman/teams/114/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"\n"
 
 msgid "Manage Virt Who configurations"
-msgstr ""
+msgstr "Virt Who 設定を管理します。"
 
 msgid "every hour"
-msgstr ""
+msgstr "毎時"
 
 msgid "every %s hours"
-msgstr ""
+msgstr "%s 時間ごと"
 
 msgid "No Report Yet"
-msgstr ""
+msgstr "レポートはまだありません"
 
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 msgid "Error"
-msgstr ""
+msgstr "エラー"
 
 msgid "Unknown configuration status"
-msgstr ""
+msgstr "不明な設定ステータス"
 
 msgid "Unlimited"
-msgstr ""
+msgstr "無制限"
 
 msgid "Whitelist"
-msgstr ""
+msgstr "ホワイトリスト"
 
 msgid "Blacklist"
-msgstr ""
+msgstr "ブラックリスト"
 
 msgid "Unknown listing mode"
-msgstr ""
+msgstr "不明な 一覧表示モード"
 
 msgid "Id"
-msgstr ""
+msgstr "ID"
 
 msgid "Name"
-msgstr ""
+msgstr "名前"
 
 msgid "Interval"
-msgstr ""
+msgstr "間隔"
 
 msgid "Status"
-msgstr ""
+msgstr "状態"
 
 msgid "Last Report At"
-msgstr ""
+msgstr "最後のレポート:"
 
 msgid "General information"
-msgstr ""
+msgstr "一般情報"
 
 msgid "Hypervisor type"
-msgstr ""
+msgstr "ハイパーバイザーのタイプ"
 
 msgid "Hypervisor server"
-msgstr ""
+msgstr "ハイパーバイザーサーバー"
 
 msgid "Hypervisor username"
-msgstr ""
+msgstr "ハイパーバイザーのユーザー名"
 
 msgid "Schedule"
-msgstr ""
+msgstr "スケジュール"
 
 msgid "Connection"
-msgstr ""
+msgstr "接続"
 
 msgid "Satellite server"
-msgstr ""
+msgstr "Satellite サーバー"
 
 msgid "Hypervisor ID"
-msgstr ""
+msgstr "ハイパーバイザー ID"
 
 msgid "Filtering"
-msgstr ""
+msgstr "フィルタリング"
 
 msgid "Excluded hosts"
-msgstr ""
+msgstr "除外されたホスト"
 
 msgid "Filtered hosts"
-msgstr ""
+msgstr "フィルターされたホスト"
 
 msgid "Debug mode"
-msgstr ""
+msgstr "デバッグモード"
 
 msgid "HTTP proxy"
-msgstr ""
+msgstr "HTTP プロキシー"
 
 msgid "Ignore proxy"
-msgstr ""
+msgstr "プロキシーを無視"
 
 msgid "Could not fetch the Virt Who configuration"
-msgstr ""
+msgstr "Virt Who 設定を取得できませんでした"
 
 msgid "File where the script will be written."
-msgstr ""
+msgstr "スクリプトが作成されるファイル"
 
 msgid "Could not save the script"
-msgstr ""
+msgstr "スクリプトを保存できませんでした"
 
 msgid "File at %{path} already exists, please specify a different path."
-msgstr ""
+msgstr "%%{path} のファイルはすでに存在します。別のパスを指定してください。"
 
 msgid "Download and execute script for the specified virt-who configuration"
-msgstr ""
+msgstr "指定した virt-who 設定のスクリプトをダウンロードおよび実行します"
 
 msgid "Could not deploy the Virt Who configuration"
-msgstr ""
+msgstr "Virt Who 設定をデプロイできませんでした"
 
 msgid "Hypervisor filtering mode"
-msgstr ""
+msgstr "ハイパーバイザーのフィルタリングモード"
 
 msgid "Virt Who configuration [%{name}] created"
-msgstr ""
+msgstr "Virt Who 設定 [%%{name}] が作成されました"
 
 msgid "Could not create the Virt Who configuration"
-msgstr ""
+msgstr "Virt Who 設定を作成できませんでした"
 
 msgid "Virt Who configuration [%{name}] updated"
-msgstr ""
+msgstr "Virt-Who 設定 [%%{name}] が更新されました"
 
 msgid "Virt Who configuration deleted"
-msgstr ""
+msgstr "Virt Who 設定が削除されました"
 
 msgid "Could not delete the Virt Who configuration"
+msgstr "Virt Who 設定を削除できませんでした"
+
+msgid "Configuration file"
+msgstr ""
+
+msgid "AHV Prism flavor"
+msgstr ""
+
+msgid "Enable AHV debug"
+msgstr ""
+
+msgid "Filter host parents"
+msgstr ""
+
+msgid "Exclude host parents"
+msgstr ""
+
+msgid "HTTP Proxy"
+msgstr ""
+
+msgid "HTTP proxy ID"
+msgstr ""
+
+msgid "HTTP proxy name"
+msgstr ""
+
+msgid "HTTP proxy URL"
+msgstr ""
+
+msgid "File where the script will be written"
 msgstr ""
