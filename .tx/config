@@ -1,9 +1,9 @@
 [main]
-host = https://www.transifex.com
+host = https://app.transifex.com
 
-[foreman.hammer-cli-foreman-virt-who-configure]
-file_filter = locale/<lang>/hammer-cli-foreman-virt-who-configure.po
+[o:foreman:p:foreman:r:hammer-cli-foreman-virt-who-configure]
+file_filter = locale/<lang>/hammer-cli-foreman-virt-who-configure.edit.po
 source_file = locale/hammer-cli-foreman-virt-who-configure.pot
 source_lang = en
 type = PO
-
+resource_name = hammer-cli-foreman-virt-who-configure
