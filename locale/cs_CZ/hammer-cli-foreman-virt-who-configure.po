@@ -4,9 +4,8 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Yulia <yulia.poyarkova@redhat.com>, 2017
-# 0868a4d1af5275b3f70b0a6dac4c99a4, 2017
-# Bryan Kearney <bryan.kearney@gmail.com>, 2017
+# mhulan <mhulan@redhat.com>, 2017
+# Pavel Borecki <pavel.borecki@gmail.com>, 2019
 #
 #, fuzzy
 msgid ""
@@ -15,126 +14,126 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-20 10:36+0200\n"
 "PO-Revision-Date: 2017-06-01 14:23+0000\n"
-"Last-Translator: Bryan Kearney <bryan.kearney@gmail.com>, 2017\n"
-"Language-Team: Russian (https://app.transifex.com/foreman/teams/114/ru/)\n"
+"Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>, 2019\n"
+"Language-Team: Czech (Czech Republic) (https://app.transifex.com/foreman/"
+"teams/114/cs_CZ/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
-"%100>=11 && n%100<=14)? 2 : 3);\n"
+"Language: cs_CZ\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n "
+"<= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
 
 msgid "Manage Virt Who configurations"
-msgstr ""
+msgstr "Spravovat nastavení Virt Who"
 
 msgid "every hour"
-msgstr ""
+msgstr "každou hodinu"
 
 msgid "every %s hours"
-msgstr ""
+msgstr "každých %s hodin"
 
 msgid "No Report Yet"
-msgstr ""
+msgstr "Zatím žádné hlášení"
 
 msgid "OK"
 msgstr "OK"
 
 msgid "Error"
-msgstr "Ошибка"
+msgstr "Chyba"
 
 msgid "Unknown configuration status"
-msgstr ""
+msgstr "Neznámý konfigurační status"
 
 msgid "Unlimited"
-msgstr "Не ограничено"
+msgstr "Neomezený"
 
 msgid "Whitelist"
-msgstr ""
+msgstr "Seznam povolených"
 
 msgid "Blacklist"
-msgstr ""
+msgstr "Seznam vyloučených"
 
 msgid "Unknown listing mode"
-msgstr ""
+msgstr "Neznámý režim očekávání spojení"
 
 msgid "Id"
-msgstr "Идентификатор"
+msgstr "Identifikátor"
 
 msgid "Name"
-msgstr "Имя"
+msgstr "Název"
 
 msgid "Interval"
-msgstr "Интервал"
+msgstr "Interval"
 
 msgid "Status"
-msgstr "Состояние"
+msgstr "Stav"
 
 msgid "Last Report At"
 msgstr ""
 
 msgid "General information"
-msgstr ""
+msgstr "Obecné informace"
 
 msgid "Hypervisor type"
-msgstr ""
+msgstr "Typ hypervizoru"
 
 msgid "Hypervisor server"
-msgstr ""
+msgstr "Server s hypervizorem"
 
 msgid "Hypervisor username"
-msgstr ""
+msgstr "Uživatelské jméno na hypervizoru"
 
 msgid "Schedule"
-msgstr "Расписание"
+msgstr "Plán"
 
 msgid "Connection"
-msgstr "Соединение"
+msgstr "Připojení"
 
 msgid "Satellite server"
-msgstr ""
+msgstr "Server se Satellite"
 
 msgid "Hypervisor ID"
-msgstr ""
+msgstr "Identifikátor hypervizoru"
 
 msgid "Filtering"
-msgstr ""
+msgstr "Filtrování"
 
 msgid "Excluded hosts"
-msgstr ""
+msgstr "Vynechaní hostitelé"
 
 msgid "Filtered hosts"
-msgstr ""
+msgstr "Filtrovaní hostitelé"
 
 msgid "Debug mode"
-msgstr ""
+msgstr "Ladící režim"
 
 msgid "HTTP proxy"
-msgstr "Прокси HTTP"
+msgstr "HTTP proxy"
 
 msgid "Ignore proxy"
-msgstr ""
+msgstr "Ignorovat proxy"
 
 msgid "Could not fetch the Virt Who configuration"
-msgstr ""
+msgstr "Nedaří se získat nastavení pro Virt Who"
 
 msgid "File where the script will be written."
-msgstr ""
+msgstr "Soubor do kterého zapsat skripty."
 
 msgid "Could not save the script"
-msgstr ""
+msgstr "Skript se nedaří uložit"
 
 msgid "File at %{path} already exists, please specify a different path."
 msgstr ""
 
 msgid "Download and execute script for the specified virt-who configuration"
-msgstr ""
+msgstr "Stáhnout a spustit skript pro určené nastavení virt-who"
 
 msgid "Could not deploy the Virt Who configuration"
-msgstr ""
+msgstr "Nedaří se nasadit nastavení pro Virt Who"
 
 msgid "Hypervisor filtering mode"
-msgstr ""
+msgstr "Režim filtrování hypervizoru"
 
 msgid "Virt Who configuration [%{name}] created"
 msgstr ""
@@ -146,7 +145,7 @@ msgid "Virt Who configuration [%{name}] updated"
 msgstr ""
 
 msgid "Virt Who configuration deleted"
-msgstr ""
+msgstr "Nastavení pro Virt Who smazána"
 
 msgid "Could not delete the Virt Who configuration"
 msgstr ""
