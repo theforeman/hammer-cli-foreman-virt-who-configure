@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hammer-cli-foreman-virt-who-configure 0.0.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-20 10:36+0200\n"
+"POT-Creation-Date: 2023-07-12 16:55+0000\n"
 "PO-Revision-Date: 2017-06-01 14:23+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>, 2019\n"
 "Language-Team: Czech (Czech Republic) (https://app.transifex.com/foreman/"
@@ -84,6 +84,15 @@ msgstr "Server s hypervizorem"
 msgid "Hypervisor username"
 msgstr "Uživatelské jméno na hypervizoru"
 
+msgid "Configuration file"
+msgstr ""
+
+msgid "AHV Prism flavor"
+msgstr ""
+
+msgid "Enable AHV debug"
+msgstr ""
+
 msgid "Schedule"
 msgstr "Plán"
 
@@ -105,20 +114,35 @@ msgstr "Vynechaní hostitelé"
 msgid "Filtered hosts"
 msgstr "Filtrovaní hostitelé"
 
+msgid "Filter host parents"
+msgstr ""
+
+msgid "Exclude host parents"
+msgstr ""
+
 msgid "Debug mode"
 msgstr "Ladící režim"
-
-msgid "HTTP proxy"
-msgstr "HTTP proxy"
 
 msgid "Ignore proxy"
 msgstr "Ignorovat proxy"
 
+msgid "HTTP Proxy"
+msgstr ""
+
+msgid "HTTP proxy ID"
+msgstr ""
+
+msgid "HTTP proxy name"
+msgstr ""
+
+msgid "HTTP proxy URL"
+msgstr ""
+
 msgid "Could not fetch the Virt Who configuration"
 msgstr "Nedaří se získat nastavení pro Virt Who"
 
-msgid "File where the script will be written."
-msgstr "Soubor do kterého zapsat skripty."
+msgid "File where the script will be written"
+msgstr ""
 
 msgid "Could not save the script"
 msgstr "Skript se nedaří uložit"
@@ -148,34 +172,4 @@ msgid "Virt Who configuration deleted"
 msgstr "Nastavení pro Virt Who smazána"
 
 msgid "Could not delete the Virt Who configuration"
-msgstr ""
-
-msgid "Configuration file"
-msgstr ""
-
-msgid "AHV Prism flavor"
-msgstr ""
-
-msgid "Enable AHV debug"
-msgstr ""
-
-msgid "Filter host parents"
-msgstr ""
-
-msgid "Exclude host parents"
-msgstr ""
-
-msgid "HTTP Proxy"
-msgstr ""
-
-msgid "HTTP proxy ID"
-msgstr ""
-
-msgid "HTTP proxy name"
-msgstr ""
-
-msgid "HTTP proxy URL"
-msgstr ""
-
-msgid "File where the script will be written"
 msgstr ""

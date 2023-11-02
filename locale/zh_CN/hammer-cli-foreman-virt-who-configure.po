@@ -6,16 +6,16 @@
 # Translators:
 # tim123, 2017
 # Bryan Kearney <bryan.kearney@gmail.com>, 2018
-# Amit Upadhye <aupadhye@redhat.com>, 2022
+# Amit Upadhye <aupadhye@redhat.com>, 2023
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: hammer-cli-foreman-virt-who-configure 0.0.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-20 10:36+0200\n"
+"POT-Creation-Date: 2023-07-12 16:55+0000\n"
 "PO-Revision-Date: 2017-06-01 14:23+0000\n"
-"Last-Translator: Amit Upadhye <aupadhye@redhat.com>, 2022\n"
+"Last-Translator: Amit Upadhye <aupadhye@redhat.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/foreman/teams/114/"
 "zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -84,6 +84,15 @@ msgstr "监控程序服务器"
 msgid "Hypervisor username"
 msgstr "监控程序用户名"
 
+msgid "Configuration file"
+msgstr ""
+
+msgid "AHV Prism flavor"
+msgstr ""
+
+msgid "Enable AHV debug"
+msgstr "启用 AHV 故障排除"
+
 msgid "Schedule"
 msgstr "调度"
 
@@ -105,20 +114,35 @@ msgstr "排除主机"
 msgid "Filtered hosts"
 msgstr "过滤主机"
 
+msgid "Filter host parents"
+msgstr "过滤主机父系统"
+
+msgid "Exclude host parents"
+msgstr "排除主机父系统"
+
 msgid "Debug mode"
 msgstr "调试模式"
-
-msgid "HTTP proxy"
-msgstr "HTTP 代理"
 
 msgid "Ignore proxy"
 msgstr "忽略代理服务器"
 
+msgid "HTTP Proxy"
+msgstr ""
+
+msgid "HTTP proxy ID"
+msgstr ""
+
+msgid "HTTP proxy name"
+msgstr ""
+
+msgid "HTTP proxy URL"
+msgstr ""
+
 msgid "Could not fetch the Virt Who configuration"
 msgstr "无法获取 Virt Who 配置"
 
-msgid "File where the script will be written."
-msgstr "待编写脚本的文件。"
+msgid "File where the script will be written"
+msgstr ""
 
 msgid "Could not save the script"
 msgstr "无法保存脚本"
@@ -149,33 +173,3 @@ msgstr "已删除 Virt Who 配置"
 
 msgid "Could not delete the Virt Who configuration"
 msgstr "无法删除 Virt Who 配置"
-
-msgid "Configuration file"
-msgstr ""
-
-msgid "AHV Prism flavor"
-msgstr ""
-
-msgid "Enable AHV debug"
-msgstr ""
-
-msgid "Filter host parents"
-msgstr ""
-
-msgid "Exclude host parents"
-msgstr ""
-
-msgid "HTTP Proxy"
-msgstr ""
-
-msgid "HTTP proxy ID"
-msgstr ""
-
-msgid "HTTP proxy name"
-msgstr ""
-
-msgid "HTTP proxy URL"
-msgstr ""
-
-msgid "File where the script will be written"
-msgstr ""
