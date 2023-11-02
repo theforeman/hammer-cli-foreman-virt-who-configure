@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hammer-cli-foreman-virt-who-configure 0.0.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-20 10:36+0200\n"
+"POT-Creation-Date: 2023-07-12 16:55+0000\n"
 "PO-Revision-Date: 2017-06-01 14:23+0000\n"
 "Last-Translator: Amit Upadhye <aupadhye@redhat.com>, 2023\n"
 "Language-Team: French (https://app.transifex.com/foreman/teams/114/fr/)\n"
@@ -85,6 +85,15 @@ msgstr "Serveur d'hyperviseur"
 msgid "Hypervisor username"
 msgstr "Nom d'utilisateur de l'hyperviseur"
 
+msgid "Configuration file"
+msgstr ""
+
+msgid "AHV Prism flavor"
+msgstr ""
+
+msgid "Enable AHV debug"
+msgstr "Activer le débogage de l'AVH"
+
 msgid "Schedule"
 msgstr "Programmer"
 
@@ -106,20 +115,35 @@ msgstr "Hôtes exclus"
 msgid "Filtered hosts"
 msgstr "Hôtes filtrés"
 
+msgid "Filter host parents"
+msgstr "Filtrer les parents hôtes"
+
+msgid "Exclude host parents"
+msgstr "Exclure les parents hôtes"
+
 msgid "Debug mode"
 msgstr "Mode débogage"
-
-msgid "HTTP proxy"
-msgstr "Proxy HTTP"
 
 msgid "Ignore proxy"
 msgstr "Ignorer le proxy"
 
+msgid "HTTP Proxy"
+msgstr ""
+
+msgid "HTTP proxy ID"
+msgstr ""
+
+msgid "HTTP proxy name"
+msgstr ""
+
+msgid "HTTP proxy URL"
+msgstr ""
+
 msgid "Could not fetch the Virt Who configuration"
 msgstr "Impossible de récupérer la configuration Virt Who"
 
-msgid "File where the script will be written."
-msgstr "Fichier dans lequel sera écrit le script."
+msgid "File where the script will be written"
+msgstr ""
 
 msgid "Could not save the script"
 msgstr "Impossible d'enregistrer le script"
@@ -153,33 +177,3 @@ msgstr "Configuration Virt Who supprimée"
 
 msgid "Could not delete the Virt Who configuration"
 msgstr "Impossible de supprimer la configuration Virt Who"
-
-msgid "Configuration file"
-msgstr ""
-
-msgid "AHV Prism flavor"
-msgstr ""
-
-msgid "Enable AHV debug"
-msgstr ""
-
-msgid "Filter host parents"
-msgstr ""
-
-msgid "Exclude host parents"
-msgstr ""
-
-msgid "HTTP Proxy"
-msgstr ""
-
-msgid "HTTP proxy ID"
-msgstr ""
-
-msgid "HTTP proxy name"
-msgstr ""
-
-msgid "HTTP proxy URL"
-msgstr ""
-
-msgid "File where the script will be written"
-msgstr ""

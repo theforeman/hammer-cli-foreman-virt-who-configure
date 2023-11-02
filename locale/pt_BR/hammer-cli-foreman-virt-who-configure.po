@@ -7,16 +7,16 @@
 # Flamarion Jorge <jorge.flamarion@gmail.com>, 2017
 # Luiz Henrique Vasconcelos <luizvasconceloss@yahoo.com.br>, 2017
 # Bryan Kearney <bryan.kearney@gmail.com>, 2018
-# Amit Upadhye <aupadhye@redhat.com>, 2022
+# Amit Upadhye <aupadhye@redhat.com>, 2023
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: hammer-cli-foreman-virt-who-configure 0.0.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-20 10:36+0200\n"
+"POT-Creation-Date: 2023-07-12 16:55+0000\n"
 "PO-Revision-Date: 2017-06-01 14:23+0000\n"
-"Last-Translator: Amit Upadhye <aupadhye@redhat.com>, 2022\n"
+"Last-Translator: Amit Upadhye <aupadhye@redhat.com>, 2023\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/foreman/"
 "teams/114/pt_BR/)\n"
 "MIME-Version: 1.0\n"
@@ -86,6 +86,15 @@ msgstr "Servidor do hipervisor"
 msgid "Hypervisor username"
 msgstr "Nome de usuário do hipervisor"
 
+msgid "Configuration file"
+msgstr ""
+
+msgid "AHV Prism flavor"
+msgstr ""
+
+msgid "Enable AHV debug"
+msgstr ""
+
 msgid "Schedule"
 msgstr "Agendamento"
 
@@ -107,20 +116,35 @@ msgstr "Hosts excluídos"
 msgid "Filtered hosts"
 msgstr "Hosts filtrados"
 
+msgid "Filter host parents"
+msgstr "Filtrar pais de host"
+
+msgid "Exclude host parents"
+msgstr "Excluir pais de host"
+
 msgid "Debug mode"
 msgstr "Modo de depuração"
-
-msgid "HTTP proxy"
-msgstr "Proxy HTTP"
 
 msgid "Ignore proxy"
 msgstr "Ignorar proxy"
 
+msgid "HTTP Proxy"
+msgstr ""
+
+msgid "HTTP proxy ID"
+msgstr ""
+
+msgid "HTTP proxy name"
+msgstr ""
+
+msgid "HTTP proxy URL"
+msgstr ""
+
 msgid "Could not fetch the Virt Who configuration"
 msgstr "Não foi possível buscar a configuração do virt-who"
 
-msgid "File where the script will be written."
-msgstr "Arquivar onde o script será gravado."
+msgid "File where the script will be written"
+msgstr ""
 
 msgid "Could not save the script"
 msgstr "Não foi possível salvar o script"
@@ -153,33 +177,3 @@ msgstr "Configuração do virt-who excluída"
 
 msgid "Could not delete the Virt Who configuration"
 msgstr "Não foi possível excluir a configuração do virt-who"
-
-msgid "Configuration file"
-msgstr ""
-
-msgid "AHV Prism flavor"
-msgstr ""
-
-msgid "Enable AHV debug"
-msgstr ""
-
-msgid "Filter host parents"
-msgstr ""
-
-msgid "Exclude host parents"
-msgstr ""
-
-msgid "HTTP Proxy"
-msgstr ""
-
-msgid "HTTP proxy ID"
-msgstr ""
-
-msgid "HTTP proxy name"
-msgstr ""
-
-msgid "HTTP proxy URL"
-msgstr ""
-
-msgid "File where the script will be written"
-msgstr ""

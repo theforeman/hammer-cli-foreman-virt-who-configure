@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hammer-cli-foreman-virt-who-configure 0.0.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-20 10:36+0200\n"
+"POT-Creation-Date: 2023-07-12 16:55+0000\n"
 "PO-Revision-Date: 2017-06-01 14:23+0000\n"
 "Last-Translator: Bryan Kearney <bryan.kearney@gmail.com>, 2017\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/foreman/teams/114/"
@@ -83,6 +83,15 @@ msgstr ""
 msgid "Hypervisor username"
 msgstr ""
 
+msgid "Configuration file"
+msgstr ""
+
+msgid "AHV Prism flavor"
+msgstr ""
+
+msgid "Enable AHV debug"
+msgstr ""
+
 msgid "Schedule"
 msgstr "排程"
 
@@ -104,19 +113,34 @@ msgstr ""
 msgid "Filtered hosts"
 msgstr ""
 
+msgid "Filter host parents"
+msgstr ""
+
+msgid "Exclude host parents"
+msgstr ""
+
 msgid "Debug mode"
 msgstr ""
 
-msgid "HTTP proxy"
-msgstr "HTTP 代理"
-
 msgid "Ignore proxy"
+msgstr ""
+
+msgid "HTTP Proxy"
+msgstr ""
+
+msgid "HTTP proxy ID"
+msgstr ""
+
+msgid "HTTP proxy name"
+msgstr ""
+
+msgid "HTTP proxy URL"
 msgstr ""
 
 msgid "Could not fetch the Virt Who configuration"
 msgstr ""
 
-msgid "File where the script will be written."
+msgid "File where the script will be written"
 msgstr ""
 
 msgid "Could not save the script"
@@ -147,34 +171,4 @@ msgid "Virt Who configuration deleted"
 msgstr ""
 
 msgid "Could not delete the Virt Who configuration"
-msgstr ""
-
-msgid "Configuration file"
-msgstr ""
-
-msgid "AHV Prism flavor"
-msgstr ""
-
-msgid "Enable AHV debug"
-msgstr ""
-
-msgid "Filter host parents"
-msgstr ""
-
-msgid "Exclude host parents"
-msgstr ""
-
-msgid "HTTP Proxy"
-msgstr ""
-
-msgid "HTTP proxy ID"
-msgstr ""
-
-msgid "HTTP proxy name"
-msgstr ""
-
-msgid "HTTP proxy URL"
-msgstr ""
-
-msgid "File where the script will be written"
 msgstr ""

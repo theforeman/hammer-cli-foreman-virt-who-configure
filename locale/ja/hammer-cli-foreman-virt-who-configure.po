@@ -7,16 +7,17 @@
 # e93ed3aa97dec2eb31063731872555fc_1460a05 <71305a0095156d8e18373a5b7cfeb79e_8587>, 2017
 # 0868a4d1af5275b3f70b0a6dac4c99a4, 2017
 # Bryan Kearney <bryan.kearney@gmail.com>, 2017
-# Amit Upadhye <aupadhye@redhat.com>, 2022
+# Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2023
+# Amit Upadhye <aupadhye@redhat.com>, 2023
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: hammer-cli-foreman-virt-who-configure 0.0.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-20 10:36+0200\n"
+"POT-Creation-Date: 2023-07-12 16:55+0000\n"
 "PO-Revision-Date: 2017-06-01 14:23+0000\n"
-"Last-Translator: Amit Upadhye <aupadhye@redhat.com>, 2022\n"
+"Last-Translator: Amit Upadhye <aupadhye@redhat.com>, 2023\n"
 "Language-Team: Japanese (https://app.transifex.com/foreman/teams/114/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -84,6 +85,15 @@ msgstr "ハイパーバイザーサーバー"
 msgid "Hypervisor username"
 msgstr "ハイパーバイザーのユーザー名"
 
+msgid "Configuration file"
+msgstr ""
+
+msgid "AHV Prism flavor"
+msgstr ""
+
+msgid "Enable AHV debug"
+msgstr "AHV デバッグの有効化"
+
 msgid "Schedule"
 msgstr "スケジュール"
 
@@ -105,20 +115,35 @@ msgstr "除外されたホスト"
 msgid "Filtered hosts"
 msgstr "フィルターされたホスト"
 
+msgid "Filter host parents"
+msgstr "ホストの親のフィルタリング"
+
+msgid "Exclude host parents"
+msgstr "ホストの親の除外"
+
 msgid "Debug mode"
 msgstr "デバッグモード"
-
-msgid "HTTP proxy"
-msgstr "HTTP プロキシー"
 
 msgid "Ignore proxy"
 msgstr "プロキシーを無視"
 
+msgid "HTTP Proxy"
+msgstr "HTTP プロキシー"
+
+msgid "HTTP proxy ID"
+msgstr ""
+
+msgid "HTTP proxy name"
+msgstr ""
+
+msgid "HTTP proxy URL"
+msgstr ""
+
 msgid "Could not fetch the Virt Who configuration"
 msgstr "Virt Who 設定を取得できませんでした"
 
-msgid "File where the script will be written."
-msgstr "スクリプトが作成されるファイル"
+msgid "File where the script will be written"
+msgstr ""
 
 msgid "Could not save the script"
 msgstr "スクリプトを保存できませんでした"
@@ -149,33 +174,3 @@ msgstr "Virt Who 設定が削除されました"
 
 msgid "Could not delete the Virt Who configuration"
 msgstr "Virt Who 設定を削除できませんでした"
-
-msgid "Configuration file"
-msgstr ""
-
-msgid "AHV Prism flavor"
-msgstr ""
-
-msgid "Enable AHV debug"
-msgstr ""
-
-msgid "Filter host parents"
-msgstr ""
-
-msgid "Exclude host parents"
-msgstr ""
-
-msgid "HTTP Proxy"
-msgstr ""
-
-msgid "HTTP proxy ID"
-msgstr ""
-
-msgid "HTTP proxy name"
-msgstr ""
-
-msgid "HTTP proxy URL"
-msgstr ""
-
-msgid "File where the script will be written"
-msgstr ""
