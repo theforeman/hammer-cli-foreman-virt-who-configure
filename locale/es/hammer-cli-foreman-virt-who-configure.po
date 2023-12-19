@@ -3,87 +3,78 @@
 # This file is distributed under the same license as the hammer-cli-foreman-virt-who-configure package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-# Translators:
-# mbacovsky <martin.bacovsky@gmail.com>, 2017
-# Jared Nelson <jared@ajpadilla.com>, 2017
-# Bryan Kearney <bryan.kearney@gmail.com>, 2018
-# Amit Upadhye <aupadhye@redhat.com>, 2023
-#
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: hammer-cli-foreman-virt-who-configure 0.0.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-12 16:55+0000\n"
-"PO-Revision-Date: 2017-06-01 14:23+0000\n"
-"Last-Translator: Amit Upadhye <aupadhye@redhat.com>, 2023\n"
-"Language-Team: Spanish (https://app.transifex.com/foreman/teams/114/es/)\n"
+"PO-Revision-Date: 2023-07-12 16:55+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? "
-"1 : 2;\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
 msgid "Manage Virt Who configurations"
-msgstr "Administrar configuraciones de virt who"
+msgstr ""
 
 msgid "every hour"
-msgstr "todas las horas"
+msgstr ""
 
 msgid "every %s hours"
-msgstr "cada %s horas"
+msgstr ""
 
 msgid "No Report Yet"
-msgstr "Sin informes por el momento"
+msgstr ""
 
 msgid "OK"
-msgstr "Aceptar"
+msgstr ""
 
 msgid "Error"
-msgstr "Error"
+msgstr ""
 
 msgid "Unknown configuration status"
-msgstr "Estado de configuración desconocido"
+msgstr ""
 
 msgid "Unlimited"
-msgstr "Ilimitado"
+msgstr ""
 
 msgid "Whitelist"
-msgstr "Lista blanca"
+msgstr ""
 
 msgid "Blacklist"
-msgstr "Lista negra"
+msgstr ""
 
 msgid "Unknown listing mode"
-msgstr "Modo de lista desconocido"
+msgstr ""
 
 msgid "Id"
-msgstr "ID"
+msgstr ""
 
 msgid "Name"
-msgstr "Nombre"
+msgstr ""
 
 msgid "Interval"
-msgstr "Intervalo"
+msgstr ""
 
 msgid "Status"
-msgstr "Estado"
+msgstr ""
 
 msgid "Last Report At"
-msgstr "Último informe a las"
+msgstr ""
 
 msgid "General information"
-msgstr "Información general"
+msgstr ""
 
 msgid "Hypervisor type"
-msgstr "Tipo de hipervisor"
+msgstr ""
 
 msgid "Hypervisor server"
-msgstr "Servidor del hipervisor"
+msgstr ""
 
 msgid "Hypervisor username"
-msgstr "Nombre de usuario del hipervisor"
+msgstr ""
 
 msgid "Configuration file"
 msgstr ""
@@ -95,37 +86,37 @@ msgid "Enable AHV debug"
 msgstr ""
 
 msgid "Schedule"
-msgstr "Programa"
+msgstr ""
 
 msgid "Connection"
-msgstr "Conexión"
+msgstr ""
 
 msgid "Satellite server"
-msgstr "Servidor Satellite"
+msgstr ""
 
 msgid "Hypervisor ID"
-msgstr "ID del hipervisor"
+msgstr ""
 
 msgid "Filtering"
-msgstr "Filtrando"
+msgstr ""
 
 msgid "Excluded hosts"
-msgstr "Hosts excluidos"
+msgstr ""
 
 msgid "Filtered hosts"
-msgstr "Hosts filtrados"
+msgstr ""
 
 msgid "Filter host parents"
-msgstr "Filtrar padres de host"
+msgstr ""
 
 msgid "Exclude host parents"
-msgstr "Excluir padres de host"
+msgstr ""
 
 msgid "Debug mode"
-msgstr "Modo de depuración"
+msgstr ""
 
 msgid "Ignore proxy"
-msgstr "Ignorar el proxy"
+msgstr ""
 
 msgid "HTTP Proxy"
 msgstr ""
@@ -140,39 +131,37 @@ msgid "HTTP proxy URL"
 msgstr ""
 
 msgid "Could not fetch the Virt Who configuration"
-msgstr "No se pudo obtener la configuración de Virt Who"
+msgstr ""
 
 msgid "File where the script will be written"
 msgstr ""
 
 msgid "Could not save the script"
-msgstr "No se pudo guardar el script"
+msgstr ""
 
 msgid "File at %{path} already exists, please specify a different path."
 msgstr ""
-"El archivo en %{path} ya existe, por favor especifique una ruta diferente."
 
 msgid "Download and execute script for the specified virt-who configuration"
 msgstr ""
-"Descargar y ejecutar el script para la configuración virt-who especificada"
 
 msgid "Could not deploy the Virt Who configuration"
-msgstr "No se pudo implementar la configuración Virt Who"
+msgstr ""
 
 msgid "Hypervisor filtering mode"
-msgstr "Modo de filtrado del hipervisor"
+msgstr ""
 
 msgid "Virt Who configuration [%{name}] created"
-msgstr "Configuración de Virt Who [%{name}] creada"
+msgstr ""
 
 msgid "Could not create the Virt Who configuration"
-msgstr "No se pudo crear la configuración Virt Who"
+msgstr ""
 
 msgid "Virt Who configuration [%{name}] updated"
-msgstr "Configuración de Virt Who [%{name}] actualizada"
+msgstr ""
 
 msgid "Virt Who configuration deleted"
-msgstr "Configuración Virt Who eliminada"
+msgstr ""
 
 msgid "Could not delete the Virt Who configuration"
-msgstr "No se pudo eliminar la configuración Virt Who"
+msgstr ""

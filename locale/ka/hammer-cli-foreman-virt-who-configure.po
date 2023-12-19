@@ -3,83 +3,78 @@
 # This file is distributed under the same license as the hammer-cli-foreman-virt-who-configure package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-# Translators:
-# Temuri Doghonadze <temuri.doghonadze@gmail.com>, 2023
-#
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: hammer-cli-foreman-virt-who-configure 0.0.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-12 16:55+0000\n"
-"PO-Revision-Date: 2017-06-01 14:23+0000\n"
-"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>, 2023\n"
-"Language-Team: Georgian (https://app.transifex.com/foreman/teams/114/ka/)\n"
+"PO-Revision-Date: 2023-07-12 16:55+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ka\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
 msgid "Manage Virt Who configurations"
-msgstr "Virt-who-ის კონფიგურაციების მართვა"
+msgstr ""
 
 msgid "every hour"
-msgstr "ყოველ საათში"
+msgstr ""
 
 msgid "every %s hours"
-msgstr "ყოველ %s საათში"
+msgstr ""
 
 msgid "No Report Yet"
-msgstr "ანგარიშების გარეშე"
+msgstr ""
 
 msgid "OK"
-msgstr "დიახ"
+msgstr ""
 
 msgid "Error"
-msgstr "შეცდომა"
+msgstr ""
 
 msgid "Unknown configuration status"
-msgstr "კონფიგურაციის უცნობი სტატუსი"
+msgstr ""
 
 msgid "Unlimited"
-msgstr "შეუზღუდავი"
+msgstr ""
 
 msgid "Whitelist"
-msgstr "თეთრი სია"
+msgstr ""
 
 msgid "Blacklist"
-msgstr "შავი სია"
+msgstr ""
 
 msgid "Unknown listing mode"
-msgstr "სიის გამოტანის უცნობი რეჟიმი"
+msgstr ""
 
 msgid "Id"
-msgstr "ID"
+msgstr ""
 
 msgid "Name"
-msgstr "სახელი"
+msgstr ""
 
 msgid "Interval"
-msgstr "ინტერვალი"
+msgstr ""
 
 msgid "Status"
-msgstr "სტატუსი"
+msgstr ""
 
 msgid "Last Report At"
-msgstr "ბოლო ანგარიშის დრო"
+msgstr ""
 
 msgid "General information"
-msgstr "ზოგადი ინფორმაცია"
+msgstr ""
 
 msgid "Hypervisor type"
-msgstr "ჰაიპერვაიზორის ტიპი"
+msgstr ""
 
 msgid "Hypervisor server"
-msgstr "ჰაიპერვაიზორის სერვერი"
+msgstr ""
 
 msgid "Hypervisor username"
-msgstr "ჰაიპერვაიზორის მომხმარებლის სახელი"
+msgstr ""
 
 msgid "Configuration file"
 msgstr ""
@@ -88,43 +83,43 @@ msgid "AHV Prism flavor"
 msgstr ""
 
 msgid "Enable AHV debug"
-msgstr "AHV -ის გამართვის ჩართვა"
+msgstr ""
 
 msgid "Schedule"
-msgstr "განრიგი"
+msgstr ""
 
 msgid "Connection"
-msgstr "კავშირი"
+msgstr ""
 
 msgid "Satellite server"
-msgstr "Satellite-ის სერვერი"
+msgstr ""
 
 msgid "Hypervisor ID"
-msgstr "ჰაიპერვაიზორის ID"
+msgstr ""
 
 msgid "Filtering"
-msgstr "გაფილტვრა"
+msgstr ""
 
 msgid "Excluded hosts"
-msgstr "გამორიცხული ჰოსტები"
+msgstr ""
 
 msgid "Filtered hosts"
-msgstr "გაფილტრული ჰოსტები"
+msgstr ""
 
 msgid "Filter host parents"
-msgstr "ჰოსტის მშობლების ფილტრი"
+msgstr ""
 
 msgid "Exclude host parents"
-msgstr "ჰოსტის მშობლების გამორიცხვა"
+msgstr ""
 
 msgid "Debug mode"
-msgstr "გამართვის რეჟიმი"
+msgstr ""
 
 msgid "Ignore proxy"
-msgstr "პროქსის იგნორი"
+msgstr ""
 
 msgid "HTTP Proxy"
-msgstr "HTTP პროქსი"
+msgstr ""
 
 msgid "HTTP proxy ID"
 msgstr ""
@@ -136,38 +131,37 @@ msgid "HTTP proxy URL"
 msgstr ""
 
 msgid "Could not fetch the Virt Who configuration"
-msgstr "Virt-who-ის კონფიგურაცის გამოთხოვის შეცდომა"
+msgstr ""
 
 msgid "File where the script will be written"
 msgstr ""
 
 msgid "Could not save the script"
-msgstr "სკრიპტის შენახვის შეცდომა"
+msgstr ""
 
 msgid "File at %{path} already exists, please specify a different path."
-msgstr "ფაილი %{path} -ში უკვე არსებობს. აირჩიეთ სხვა ბილიკი."
+msgstr ""
 
 msgid "Download and execute script for the specified virt-who configuration"
 msgstr ""
-"Virt-who-ს მითითებული კონფიგურაციის განშლის სკრიპტის გადმოწერა და გაშვება"
 
 msgid "Could not deploy the Virt Who configuration"
-msgstr "Virt-who-ის კონფიგურაცის შექმნის გაშლის შეცდომა"
+msgstr ""
 
 msgid "Hypervisor filtering mode"
-msgstr "ჰაიპერვაიზორის გაფილტვრის რეჟიმი"
+msgstr ""
 
 msgid "Virt Who configuration [%{name}] created"
-msgstr "Virt-who-ის კონფიგურაცია [%{name}] შეიქმნა"
+msgstr ""
 
 msgid "Could not create the Virt Who configuration"
-msgstr "Virt-who-ის კონფიგურაცის შექმნის შეცდომა"
+msgstr ""
 
 msgid "Virt Who configuration [%{name}] updated"
-msgstr "Virt-who-ის კონფიგურაცია [%{name}] განახლდა"
+msgstr ""
 
 msgid "Virt Who configuration deleted"
-msgstr "Virt-who-ის კონფიგურაცის წაიშალა"
+msgstr ""
 
 msgid "Could not delete the Virt Who configuration"
-msgstr "Virt-who-ის კონფიგურაცის წაშლის შეცდომა"
+msgstr ""

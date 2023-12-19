@@ -3,86 +3,78 @@
 # This file is distributed under the same license as the hammer-cli-foreman-virt-who-configure package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-# Translators:
-# tim123, 2017
-# Bryan Kearney <bryan.kearney@gmail.com>, 2018
-# Amit Upadhye <aupadhye@redhat.com>, 2023
-#
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: hammer-cli-foreman-virt-who-configure 0.0.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-12 16:55+0000\n"
-"PO-Revision-Date: 2017-06-01 14:23+0000\n"
-"Last-Translator: Amit Upadhye <aupadhye@redhat.com>, 2023\n"
-"Language-Team: Chinese (China) (https://app.transifex.com/foreman/teams/114/"
-"zh_CN/)\n"
+"PO-Revision-Date: 2023-07-12 16:55+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_CN\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
 msgid "Manage Virt Who configurations"
-msgstr "管理 Virt Who 配置"
+msgstr ""
 
 msgid "every hour"
-msgstr "每小时"
+msgstr ""
 
 msgid "every %s hours"
-msgstr "每 %s 小时"
+msgstr ""
 
 msgid "No Report Yet"
-msgstr "尚没有报告"
+msgstr ""
 
 msgid "OK"
-msgstr "好"
+msgstr ""
 
 msgid "Error"
-msgstr "错误"
+msgstr ""
 
 msgid "Unknown configuration status"
-msgstr "未知配置状态"
+msgstr ""
 
 msgid "Unlimited"
-msgstr "无限制"
+msgstr ""
 
 msgid "Whitelist"
-msgstr "白名单"
+msgstr ""
 
 msgid "Blacklist"
-msgstr "黑名单"
+msgstr ""
 
 msgid "Unknown listing mode"
-msgstr "未知的列表模式"
+msgstr ""
 
 msgid "Id"
-msgstr "ID"
+msgstr ""
 
 msgid "Name"
-msgstr "名称"
+msgstr ""
 
 msgid "Interval"
-msgstr "间隔"
+msgstr ""
 
 msgid "Status"
-msgstr "状态"
+msgstr ""
 
 msgid "Last Report At"
-msgstr "最新报告"
+msgstr ""
 
 msgid "General information"
-msgstr "通用信息"
+msgstr ""
 
 msgid "Hypervisor type"
-msgstr "Hypervisor 类型"
+msgstr ""
 
 msgid "Hypervisor server"
-msgstr "监控程序服务器"
+msgstr ""
 
 msgid "Hypervisor username"
-msgstr "监控程序用户名"
+msgstr ""
 
 msgid "Configuration file"
 msgstr ""
@@ -91,40 +83,40 @@ msgid "AHV Prism flavor"
 msgstr ""
 
 msgid "Enable AHV debug"
-msgstr "启用 AHV 故障排除"
+msgstr ""
 
 msgid "Schedule"
-msgstr "调度"
+msgstr ""
 
 msgid "Connection"
-msgstr "连接"
+msgstr ""
 
 msgid "Satellite server"
-msgstr "Satellite 服务器"
+msgstr ""
 
 msgid "Hypervisor ID"
-msgstr "Hypervisor ID"
+msgstr ""
 
 msgid "Filtering"
-msgstr "过滤"
+msgstr ""
 
 msgid "Excluded hosts"
-msgstr "排除主机"
+msgstr ""
 
 msgid "Filtered hosts"
-msgstr "过滤主机"
+msgstr ""
 
 msgid "Filter host parents"
-msgstr "过滤主机父系统"
+msgstr ""
 
 msgid "Exclude host parents"
-msgstr "排除主机父系统"
+msgstr ""
 
 msgid "Debug mode"
-msgstr "调试模式"
+msgstr ""
 
 msgid "Ignore proxy"
-msgstr "忽略代理服务器"
+msgstr ""
 
 msgid "HTTP Proxy"
 msgstr ""
@@ -139,37 +131,37 @@ msgid "HTTP proxy URL"
 msgstr ""
 
 msgid "Could not fetch the Virt Who configuration"
-msgstr "无法获取 Virt Who 配置"
+msgstr ""
 
 msgid "File where the script will be written"
 msgstr ""
 
 msgid "Could not save the script"
-msgstr "无法保存脚本"
+msgstr ""
 
 msgid "File at %{path} already exists, please specify a different path."
-msgstr "%%{path} 中已存在该文件。请指定不同路径。"
+msgstr ""
 
 msgid "Download and execute script for the specified virt-who configuration"
-msgstr "为指定的 virt-who 配置下载和执行脚本"
+msgstr ""
 
 msgid "Could not deploy the Virt Who configuration"
-msgstr "无法部署 Virt Who 配置"
+msgstr ""
 
 msgid "Hypervisor filtering mode"
-msgstr "监控程序过滤模式"
+msgstr ""
 
 msgid "Virt Who configuration [%{name}] created"
-msgstr "创建了 Virt Who 配置 [%%{name}]"
+msgstr ""
 
 msgid "Could not create the Virt Who configuration"
-msgstr "无法创建 Virt Who 配置"
+msgstr ""
 
 msgid "Virt Who configuration [%{name}] updated"
-msgstr "更新了 Virt Who 配置 [%%{name}]"
+msgstr ""
 
 msgid "Virt Who configuration deleted"
-msgstr "已删除 Virt Who 配置"
+msgstr ""
 
 msgid "Could not delete the Virt Who configuration"
-msgstr "无法删除 Virt Who 配置"
+msgstr ""
