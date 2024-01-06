@@ -82,10 +82,10 @@ msgid "Hypervisor username"
 msgstr "ჰაიპერვაიზორის მომხმარებლის სახელი"
 
 msgid "Configuration file"
-msgstr ""
+msgstr "კონფიგურაციის ფაილი"
 
 msgid "AHV Prism flavor"
-msgstr ""
+msgstr "AHV Prism-ის ვარიანტი"
 
 msgid "Enable AHV debug"
 msgstr "AHV -ის გამართვის ჩართვა"
@@ -127,19 +127,19 @@ msgid "HTTP Proxy"
 msgstr "HTTP პროქსი"
 
 msgid "HTTP proxy ID"
-msgstr ""
+msgstr "HTTP პროქსის ID"
 
 msgid "HTTP proxy name"
-msgstr ""
+msgstr "HTTP პროქსის სახელი"
 
 msgid "HTTP proxy URL"
-msgstr ""
+msgstr "HTTP პროქსის URL"
 
 msgid "Could not fetch the Virt Who configuration"
 msgstr "Virt-who-ის კონფიგურაცის გამოთხოვის შეცდომა"
 
 msgid "File where the script will be written"
-msgstr ""
+msgstr "ფაილი, სადაც სკრიპტი ჩაიწერება"
 
 msgid "Could not save the script"
 msgstr "სკრიპტის შენახვის შეცდომა"
