@@ -19,34 +19,34 @@ module HammerCLIForemanVirtWhoConfigure
 
     def self.format_status(status)
       case status
-        when 'unknown'
-          _('No Report Yet')
-        when 'ok', 'out_of_date'
-          _('OK')
-        when 'error'
-          _('Error')
-        else
-          _('Unknown configuration status')
+      when 'unknown'
+        _('No Report Yet')
+      when 'ok', 'out_of_date'
+        _('OK')
+      when 'error'
+        _('Error')
+      else
+        _('Unknown configuration status')
       end
     end
 
     def self.format_filtering_mode(mode)
       case mode
-        when MODE_UNLIMITED
-          _('Unlimited')
-        when MODE_WHITELIST
-          _('Whitelist')
-        when MODE_BLACKLIST
-          _('Blacklist')
-        else
-          _('Unknown listing mode')
+      when MODE_UNLIMITED
+        _('Unlimited')
+      when MODE_WHITELIST
+        _('Whitelist')
+      when MODE_BLACKLIST
+        _('Blacklist')
+      else
+        _('Unknown listing mode')
       end
     end
 
     def self.validate_hypervisor_options(conf)
       options = conf["hypervisor_type"] == 'kubevirt' ? %w(hypervisor_server hypervisor_username) : %w(kubeconfig_path)
       options.append("prism_flavor", "ahv_internal_debug") unless conf["hypervisor_type"] == 'ahv'
-      conf.delete_if { |k, v| options.include?(k) }
+      conf.delete_if { |k, _v| options.include?(k) }
     end
 
     class ListCommand < HammerCLIForeman::ListCommand
@@ -146,7 +146,7 @@ module HammerCLIForemanVirtWhoConfigure
             )
             return HammerCLI::EX_USAGE
           else
-            File.write(path, data, perm: 0700, mode: File::RDWR|File::CREAT|File::EXCL)
+            File.write(path, data, perm: 0700, mode: File::RDWR | File::CREAT | File::EXCL)
             return HammerCLI::EX_OK
           end
         else
@@ -194,7 +194,7 @@ module HammerCLIForemanVirtWhoConfigure
         'none' => 0,
         'whitelist' => 1,
         'blacklist' => 2
-      }
+      }.freeze
 
       def self.included(base)
         base.option '--filtering-mode', 'MODE', _('Hypervisor filtering mode'),

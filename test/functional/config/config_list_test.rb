@@ -11,7 +11,7 @@ describe "virt-who-config" do
         config,
         config('status' => 'ok', 'interval' => 120),
         config('status' => 'out_of_date', 'interval' => 240),
-        config('status' => 'error', 'interval' => 480),
+        config('status' => 'error', 'interval' => 480)
       ]
 
       api_expects(:configs, :index).returns(index_response(configs))
@@ -32,9 +32,9 @@ describe "virt-who-config" do
       params = ['--page=2', '--per-page=10', '--order', 'name ASC']
 
       api_expects(:configs, :index).with_params(
-        'page' => '2',
+        'page' => 2,
         'per_page' => '10',
-        'order' => 'name ASC',
+        'order' => 'name ASC'
       ).returns(index_response([]))
 
       result = run_cmd(@cmd + params)

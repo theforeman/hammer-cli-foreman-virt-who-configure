@@ -9,9 +9,16 @@ Rake::TestTask.new do |t|
   t.warning = ENV.key?('RUBY_WARNINGS')
 end
 
-namespace :pkg do
-  desc 'Generate package source gem'
-  task :generate_source => :build
+begin
+  require 'rubocop/rake_task'
+  RuboCop::RakeTask.new
+rescue => _
+  puts "Rubocop not loaded."
+end
+
+task :default do
+  Rake::Task['rubocop'].execute
+  Rake::Task['test'].execute
 end
 
 require "hammer_cli_foreman_virt_who_configure/version"

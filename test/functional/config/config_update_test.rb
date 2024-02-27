@@ -37,7 +37,7 @@ describe "virt-who-config" do
           'satellite_url' => '1',
           'organization_id' => 1
         }
-      ).returns({:config => config})
+      ).returns(:config => config)
 
       result = run_cmd(@cmd + params)
       assert_cmd(expected_result, result)

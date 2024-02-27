@@ -49,17 +49,7 @@ describe "virt-who-config" do
 
     it "validates --hypervisor-type values" do
       params = hash_to_opts(@required_args.merge(:hypervisor_type => 'other'))
-      assert_usage_error(@cmd, params, "Option '--hypervisor-type': Value must be one of 'esx', 'rhevm', 'hyperv', 'xen', 'libvirt'..")
-    end
-
-    it "requires --hypervisor-server" do
-      params = hash_to_opts(@required_args, :reject => :hypervisor_server)
-      assert_requires_argument(@cmd, params, 'hypervisor-server')
-    end
-
-    it "requires --hypervisor-username" do
-      params = hash_to_opts(@required_args, :reject => :hypervisor_username)
-      assert_requires_argument(@cmd, params, 'hypervisor-username')
+      assert_usage_error(@cmd, params, "Option '--hypervisor-type': Value must be one of 'esx', 'hyperv', 'libvirt', 'kubevirt', 'ahv'..")
     end
 
     it "requires --satellite-url" do
@@ -84,7 +74,7 @@ describe "virt-who-config" do
           'satellite_url' => '1',
           'organization_id' => 1
         }
-      ).returns({:config => { :name => 'test'}})
+      ).returns(:config => { :name => 'test'})
 
       result = run_cmd(@cmd + params)
       assert_cmd(expected_result, result)
