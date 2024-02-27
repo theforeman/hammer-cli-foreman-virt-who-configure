@@ -28,7 +28,7 @@ def assert_usage_error(cmd, params, error_msg)
   assert_cmd(expected_result, result)
 end
 
-def hash_to_opts(hash, options={})
+def hash_to_opts(hash, options = {})
   hash.reject do |k|
     k == options[:reject]
   end.map do |key, value|

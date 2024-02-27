@@ -11,7 +11,7 @@ describe "virt-who-config" do
       params = ['--name=test']
 
       api_expects_search(:configs, :name => 'test').returns(index_response([config]))
-      api_expects(:configs, :deploy_script, 'Get config script').returns({'virt_who_config_script' => @script})
+      api_expects(:configs, :deploy_script, 'Get config script').returns('virt_who_config_script' => @script)
 
       expected_result = CommandExpectation.new(@script + "\n")
 
@@ -27,7 +27,7 @@ describe "virt-who-config" do
         params = ['--name=test', '--output', file_path]
 
         api_expects_search(:configs, :name => 'test').returns(index_response([config]))
-        api_expects(:configs, :deploy_script, 'Get config script').returns({'virt_who_config_script' => @script})
+        api_expects(:configs, :deploy_script, 'Get config script').returns('virt_who_config_script' => @script)
 
         result = run_cmd(@cmd + params)
 
@@ -44,7 +44,7 @@ describe "virt-who-config" do
         params = ['--name=test', '--output', file.path]
 
         api_expects_search(:configs, :name => 'test').returns(index_response([config]))
-        api_expects(:configs, :deploy_script, 'Get config script').returns({'virt_who_config_script' => @script})
+        api_expects(:configs, :deploy_script, 'Get config script').returns('virt_who_config_script' => @script)
 
         result = run_cmd(@cmd + params)
 
@@ -53,7 +53,7 @@ describe "virt-who-config" do
         assert_cmd(expected_result, result)
         assert_equal('', file.read)
       ensure
-         file.unlink
+        file.unlink
       end
     end
   end

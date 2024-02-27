@@ -1,6 +1,6 @@
 module HammerCLIForemanVirtWhoConfigure
   class SystemCaller
-    WHITELISTED_VARS = %w[HOME USER LANG].freeze
+    WHITELISTED_VARS = %w(HOME USER LANG).freeze
 
     def initialize(tempfile = nil)
       @tempfile = tempfile || Tempfile.new('virt_who')
