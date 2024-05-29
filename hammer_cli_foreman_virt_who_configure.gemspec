@@ -28,12 +28,12 @@ EOF
   s.add_dependency 'hammer_cli', '~> 3.10', '< 4.0'
   s.add_dependency 'hammer_cli_foreman', '~> 3.9', '< 4.0'
 
-  s.add_development_dependency 'ci_reporter', '>= 1.6.3', "< 2.0.0"
+  s.add_development_dependency 'ci_reporter', '>= 1.6.3', '< 2.0.0'
   s.add_development_dependency 'gettext', '>= 3.1.3', '< 4.0.0'
   s.add_development_dependency 'minitest', '4.7.4'
   s.add_development_dependency 'minitest-spec-context', '~> 0.0.5'
   s.add_development_dependency 'mocha', '~> 2.0'
   s.add_development_dependency 'rake', '~> 10.0'
-  s.add_development_dependency 'rubocop', '0.42'
+  s.add_development_dependency 'theforeman-rubocop', '~> 0.1.0'
   s.add_development_dependency 'thor', '~> 1.0'
 end

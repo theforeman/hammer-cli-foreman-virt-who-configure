@@ -1,17 +1,19 @@
-source "https://rubygems.org"
+# frozen_string_literal: true
+
+source 'https://rubygems.org'
 
 gemspec
 
 gem 'gettext', '>= 3.1.3', '< 4.0.0'
 
 group :test do
-  gem 'rake'
-  gem 'thor'
+  gem 'ci_reporter', '>= 1.6.3', '< 2.0.0', :require => false
   gem 'minitest', '5.18'
   gem 'minitest-spec-context'
-  gem 'simplecov'
   gem 'mocha'
-  gem 'ci_reporter', '>= 1.6.3', "< 2.0.0", :require => false
+  gem 'rake'
+  gem 'simplecov'
+  gem 'thor'
 end
 
 # load local gemfile
