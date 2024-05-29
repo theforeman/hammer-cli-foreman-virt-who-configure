@@ -23,7 +23,7 @@ EOF
   s.test_files       = Dir['{test}/**/*']
   s.extra_rdoc_files = Dir['{doc}/**/*', 'README*']
   s.require_paths = ["lib"]
-  s.required_ruby_version = '>= 2.7', '< 3.2'
+  s.required_ruby_version = '>= 2.7', '< 4'
 
   s.add_dependency 'hammer_cli', '~> 3.10', '< 4.0'
   s.add_dependency 'hammer_cli_foreman', '~> 3.9', '< 4.0'
