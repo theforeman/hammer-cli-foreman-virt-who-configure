@@ -1,13 +1,15 @@
+# frozen_string_literal: true
+
 require_relative '../test_helper'
 
-describe "virt-who-config" do
-  describe "fetch" do
+describe 'virt-who-config' do
+  describe 'fetch' do
     before do
-      @cmd = ["virt-who-config", "fetch"]
+      @cmd = ['virt-who-config', 'fetch']
       @script = 'echo BASH SCRIPT'
     end
 
-    it "prints script to stdout by default" do
+    it 'prints script to stdout by default' do
       params = ['--name=test']
 
       api_expects_search(:configs, :name => 'test').returns(index_response([config]))
@@ -19,7 +21,7 @@ describe "virt-who-config" do
       assert_cmd(expected_result, result)
     end
 
-    it "stores script into a file" do
+    it 'stores script into a file' do
       file = Tempfile.new
       file_path = file.path
       file.unlink
@@ -38,7 +40,7 @@ describe "virt-who-config" do
       end
     end
 
-    it "refuses to store the script into an existing file" do
+    it 'refuses to store the script into an existing file' do
       file = Tempfile.new
       begin
         params = ['--name=test', '--output', file.path]

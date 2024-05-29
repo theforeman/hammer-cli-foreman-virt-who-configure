@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 require_relative '../test_helper'
 
-describe "virt-who-config" do
-  describe "update" do
+describe 'virt-who-config' do
+  describe 'update' do
     before do
-      @cmd = ["virt-who-config", "update"]
+      @cmd = ['virt-who-config', 'update']
       @update_args = {
         :name => 'test',
         :new_name => 'test2',
@@ -18,7 +20,7 @@ describe "virt-who-config" do
       }
     end
 
-    it "sends values to api" do
+    it 'sends values to api' do
       params = hash_to_opts(@update_args)
 
       expected_result = success_result("Virt Who configuration [test] updated\n")

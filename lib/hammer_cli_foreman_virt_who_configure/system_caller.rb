@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module HammerCLIForemanVirtWhoConfigure
   class SystemCaller
     WHITELISTED_VARS = %w(HOME USER LANG).freeze

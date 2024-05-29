@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 require 'rake/testtask'
 require 'bundler/gem_tasks'
 require 'ci/reporter/rake/minitest'
 
 Rake::TestTask.new do |t|
-  t.libs.push "lib"
+  t.libs.push 'lib'
   t.test_files = Dir.glob('test/**/*_test.rb')
   t.verbose = true
   t.warning = ENV.key?('RUBY_WARNINGS')
@@ -12,8 +14,8 @@ end
 begin
   require 'rubocop/rake_task'
   RuboCop::RakeTask.new
-rescue => _
-  puts "Rubocop not loaded."
+rescue StandardError => _e
+  puts 'Rubocop not loaded.'
 end
 
 task :default do
@@ -21,7 +23,7 @@ task :default do
   Rake::Task['test'].execute
 end
 
-require "hammer_cli_foreman_virt_who_configure/version"
-require "hammer_cli_foreman_virt_who_configure/i18n"
-require "hammer_cli/i18n/find_task"
+require 'hammer_cli_foreman_virt_who_configure/version'
+require 'hammer_cli_foreman_virt_who_configure/i18n'
+require 'hammer_cli/i18n/find_task'
 HammerCLI::I18n::FindTask.define(HammerCLIForemanVirtWhoConfigure::I18n::LocaleDomain.new, HammerCLIForemanVirtWhoConfigure.version.to_s)
