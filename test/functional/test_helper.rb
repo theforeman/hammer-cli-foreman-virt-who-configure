@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative '../test_helper'
 
 require 'hammer_cli/testing/command_assertions'
@@ -21,7 +23,7 @@ end
 def assert_usage_error(cmd, params, error_msg)
   expected_result = usage_error_result(cmd,
     error_msg,
-    "Could not create the Virt Who configuration")
+    'Could not create the Virt Who configuration')
 
   api_expects_no_call
   result = run_cmd(cmd + params)
@@ -38,23 +40,23 @@ end
 
 def config(attrs = {})
   {
-    "name" => "test",
-    "interval" => 60,
-    "organization_id" => 1,
-    "whitelist" => "",
-    "blacklist" => "",
-    "hypervisor_id" => "hostname",
-    "hypervisor_type" => "libvirt",
-    "hypervisor_server" => "libvirt.test.org",
-    "hypervisor_username" => "user",
-    "debug" => false,
-    "satellite_url" => "10.34.131.166",
-    "proxy" => "",
-    "no_proxy" => "",
-    "status" => "unknown",
-    "last_report_at" => nil,
-    "out_of_date_at" => nil,
-    "filtering_mode" => 0,
-    "id" => 11
+    'name' => 'test',
+    'interval' => 60,
+    'organization_id' => 1,
+    'whitelist' => '',
+    'blacklist' => '',
+    'hypervisor_id' => 'hostname',
+    'hypervisor_type' => 'libvirt',
+    'hypervisor_server' => 'libvirt.test.org',
+    'hypervisor_username' => 'user',
+    'debug' => false,
+    'satellite_url' => '10.34.131.166',
+    'proxy' => '',
+    'no_proxy' => '',
+    'status' => 'unknown',
+    'last_report_at' => nil,
+    'out_of_date_at' => nil,
+    'filtering_mode' => 0,
+    'id' => 11
   }.merge(attrs)
 end

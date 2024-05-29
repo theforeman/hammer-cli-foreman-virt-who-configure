@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 require_relative '../test_helper'
 
-describe "virt-who-config" do
-  describe "create" do
+describe 'virt-who-config' do
+  describe 'create' do
     before do
-      @cmd = ["virt-who-config", "create"]
+      @cmd = ['virt-who-config', 'create']
       @required_args = {
         :name => 'test',
         :interval => 60,
@@ -17,47 +19,47 @@ describe "virt-who-config" do
       }
     end
 
-    it "requires --name" do
+    it 'requires --name' do
       params = hash_to_opts(@required_args, :reject => :name)
       assert_requires_argument(@cmd, params, 'name')
     end
 
-    it "requires --interval" do
+    it 'requires --interval' do
       params = hash_to_opts(@required_args, :reject => :interval)
       assert_requires_argument(@cmd, params, 'interval')
     end
 
-    it "requires --filtering-mode" do
+    it 'requires --filtering-mode' do
       params = hash_to_opts(@required_args, :reject => :filtering_mode)
       assert_requires_argument(@cmd, params, 'filtering-mode')
     end
 
-    it "requires --hypervisor-id" do
+    it 'requires --hypervisor-id' do
       params = hash_to_opts(@required_args, :reject => :hypervisor_id)
       assert_requires_argument(@cmd, params, 'hypervisor-id')
     end
 
-    it "validates --hypervisor-id values" do
+    it 'validates --hypervisor-id values' do
       params = hash_to_opts(@required_args.merge(:hypervisor_id => 'other'))
       assert_usage_error(@cmd, params, "Option '--hypervisor-id': Value must be one of 'hostname', 'uuid', 'hwuuid'..")
     end
 
-    it "requires --hypervisor-type" do
+    it 'requires --hypervisor-type' do
       params = hash_to_opts(@required_args, :reject => :hypervisor_type)
       assert_requires_argument(@cmd, params, 'hypervisor-type')
     end
 
-    it "validates --hypervisor-type values" do
+    it 'validates --hypervisor-type values' do
       params = hash_to_opts(@required_args.merge(:hypervisor_type => 'other'))
       assert_usage_error(@cmd, params, "Option '--hypervisor-type': Value must be one of 'esx', 'hyperv', 'libvirt', 'kubevirt', 'ahv'..")
     end
 
-    it "requires --satellite-url" do
+    it 'requires --satellite-url' do
       params = hash_to_opts(@required_args, :reject => :satellite_url)
       assert_requires_argument(@cmd, params, 'satellite-url')
     end
 
-    it "sends values to api" do
+    it 'sends values to api' do
       params = hash_to_opts(@required_args)
 
       expected_result = success_result("Virt Who configuration [test] created\n")

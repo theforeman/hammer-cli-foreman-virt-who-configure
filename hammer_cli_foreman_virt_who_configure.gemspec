@@ -1,15 +1,16 @@
-# -*- encoding: utf-8 -*-
-$LOAD_PATH.unshift File.expand_path("../lib", __FILE__)
-require "hammer_cli_foreman_virt_who_configure/version"
+# frozen_string_literal: true
+
+$LOAD_PATH.unshift File.expand_path('lib', __dir__)
+require 'hammer_cli_foreman_virt_who_configure/version'
 
 Gem::Specification.new do |s|
-  s.name          = "hammer_cli_foreman_virt_who_configure"
+  s.name          = 'hammer_cli_foreman_virt_who_configure'
   s.version       = HammerCLIForemanVirtWhoConfigure.version.dup
   s.platform      = Gem::Platform::RUBY
-  s.authors       = ["Tomáš Strachota"]
-  s.email         = "tstracho@redhat.com"
-  s.homepage      = "https://github.com/theforeman/hammer-cli-foreman-virt-who-configure"
-  s.license       = "GPL-3.0+"
+  s.authors       = ['Tomáš Strachota']
+  s.email         = 'tstracho@redhat.com'
+  s.homepage      = 'https://github.com/theforeman/hammer-cli-foreman-virt-who-configure'
+  s.license       = 'GPL-3.0+'
 
   s.summary       = 'Plugin for configuring Virt Who'
   s.description   = <<EOF
@@ -22,7 +23,7 @@ EOF
 
   s.test_files       = Dir['{test}/**/*']
   s.extra_rdoc_files = Dir['{doc}/**/*', 'README*']
-  s.require_paths = ["lib"]
+  s.require_paths = ['lib']
   s.required_ruby_version = '>= 2.7', '< 4'
 
   s.add_dependency 'hammer_cli', '~> 3.10', '< 4.0'

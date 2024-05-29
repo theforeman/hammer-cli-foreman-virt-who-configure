@@ -1,12 +1,14 @@
+# frozen_string_literal: true
+
 require_relative '../test_helper'
 
-describe "virt-who-config" do
-  describe "list" do
+describe 'virt-who-config' do
+  describe 'list' do
     before do
-      @cmd = ["virt-who-config", "list"]
+      @cmd = ['virt-who-config', 'list']
     end
 
-    it "formats interval and status" do
+    it 'formats interval and status' do
       configs = [
         config,
         config('status' => 'ok', 'interval' => 120),
@@ -28,7 +30,7 @@ describe "virt-who-config" do
       assert_cmd(success_result(output), result)
     end
 
-    it "supports pagination" do
+    it 'supports pagination' do
       params = ['--page=2', '--per-page=10', '--order', 'name ASC']
 
       api_expects(:configs, :index).with_params(
@@ -41,7 +43,7 @@ describe "virt-who-config" do
       assert_cmd(success_result(/.*/), result)
     end
 
-    it "supports search" do
+    it 'supports search' do
       params = ['--search', 'name ~ test']
 
       api_expects(:configs, :index).with_params('search' => 'name ~ test').returns(index_response([]))

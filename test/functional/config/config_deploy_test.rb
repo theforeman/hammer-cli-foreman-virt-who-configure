@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 require_relative '../test_helper'
 
-describe "virt-who-config" do
-  describe "deploy" do
+describe 'virt-who-config' do
+  describe 'deploy' do
     class FakeSystemCaller
       def initialize(output, result = true)
         @output = output
@@ -15,12 +17,12 @@ describe "virt-who-config" do
     end
 
     before do
-      @cmd = ["virt-who-config", "deploy"]
+      @cmd = ['virt-who-config', 'deploy']
       @params = ['--name=test']
       @script = 'echo BASH SCRIPT'
     end
 
-    it "sends the script to #system" do
+    it 'sends the script to #system' do
       api_expects_search(:configs, :name => 'test').returns(index_response([config]))
       api_expects(:configs, :deploy_script, 'Get config script').returns('virt_who_config_script' => @script)
 
@@ -31,7 +33,7 @@ describe "virt-who-config" do
       assert_cmd(CommandExpectation.new, result)
     end
 
-    it "prints output of the script to stdout" do
+    it 'prints output of the script to stdout' do
       api_expects_search(:configs, :name => 'test').returns(index_response([config]))
       api_expects(:configs, :deploy_script, 'Get config script').returns('virt_who_config_script' => @script)
 
@@ -42,7 +44,7 @@ describe "virt-who-config" do
       assert_cmd(expected_result, result)
     end
 
-    it "returns HammerCLI::EX_SOFTWARE on config failure" do
+    it 'returns HammerCLI::EX_SOFTWARE on config failure' do
       api_expects_search(:configs, :name => 'test').returns(index_response([config]))
       api_expects(:configs, :deploy_script, 'Get config script').returns('virt_who_config_script' => @script)
 

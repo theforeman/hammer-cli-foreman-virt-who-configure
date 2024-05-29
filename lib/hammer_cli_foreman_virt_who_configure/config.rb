@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'hammer_cli_foreman_virt_who_configure/system_caller'
 
 module HammerCLIForemanVirtWhoConfigure
@@ -44,8 +46,8 @@ module HammerCLIForemanVirtWhoConfigure
     end
 
     def self.validate_hypervisor_options(conf)
-      options = conf["hypervisor_type"] == 'kubevirt' ? %w(hypervisor_server hypervisor_username) : %w(kubeconfig_path)
-      options.append("prism_flavor", "ahv_internal_debug") unless conf["hypervisor_type"] == 'ahv'
+      options = conf['hypervisor_type'] == 'kubevirt' ? %w(hypervisor_server hypervisor_username) : %w(kubeconfig_path)
+      options.append('prism_flavor', 'ahv_internal_debug') unless conf['hypervisor_type'] == 'ahv'
       conf.delete_if { |k, _v| options.include?(k) }
     end
 
@@ -113,12 +115,12 @@ module HammerCLIForemanVirtWhoConfigure
         if conf['filtering_mode'] != MODE_WHITELIST
           conf['whitelist'] = nil
         else
-          conf['whitelist'] ||= " "
+          conf['whitelist'] ||= ' '
         end
         if conf['filtering_mode'] != MODE_BLACKLIST
           conf['blacklist'] = nil
         else
-          conf['blacklist'] ||= " "
+          conf['blacklist'] ||= ' '
         end
         VirtWhoConfig.validate_hypervisor_options(conf)
       end
@@ -127,7 +129,7 @@ module HammerCLIForemanVirtWhoConfigure
     end
 
     class FetchCommand < HammerCLIForeman::Command
-      command_name "fetch"
+      command_name 'fetch'
       action :deploy_script
 
       failure_message _('Could not fetch the Virt Who configuration')
@@ -142,7 +144,7 @@ module HammerCLIForemanVirtWhoConfigure
             # this could be a security issue, the file should be readable only by the user
             output.print_error(
               _('Could not save the script'),
-              _("File at %{path} already exists, please specify a different path.") % { :path => path }
+              _('File at %{path} already exists, please specify a different path.') % { :path => path }
             )
             return HammerCLI::EX_USAGE
           else
@@ -163,7 +165,7 @@ module HammerCLIForemanVirtWhoConfigure
     end
 
     class DeployCommand < HammerCLIForeman::Command
-      command_name "deploy"
+      command_name 'deploy'
       desc _('Download and execute script for the specified virt-who configuration')
       action :deploy_script
 
