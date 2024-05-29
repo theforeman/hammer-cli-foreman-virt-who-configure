@@ -1,15 +1,16 @@
 # TODO: remove this
 inherit_from: .rubocop_todo.yml
 
+inherit_gem:
+  theforeman-rubocop:
+    - default.yml
+
 AllCops:
   TargetRubyVersion: 2.7
 
 MethodLength:
-  Description: 'Avoid methods longer than 30 lines of code.'
+  Description: "Avoid methods longer than 30 lines of code."
   Max: 30 # default is 10
-
-Documentation:
-  Enabled: false
 
 StringLiterals:
   Enabled: false
@@ -29,70 +30,13 @@ LineLength:
 FormatString:
   Enabled: false # we use % for i18n
 
-IfUnlessModifier:
-  Enabled: false
-
-Next:
-  Enabled: false # don't force next over conditions
-
-MethodCalledOnDoEndBlock:
-  Enabled: true
-
-LeadingCommentSpace:
-  Enabled: false
-
-RescueModifier:
-  Enabled: false
-
-AssignmentInCondition:
-  Enabled: false
-
-AlignParameters:
-  Enabled: false # don't care if parameters are not aligned
-
-AlignParameters:
-  Enabled: false # don't care if parameters are not aligned
-
-WhileUntilModifier:
-  Enabled: false
-
-ParenthesesAroundCondition:
-  Enabled: false
-
-DotPosition:
-  Enabled: false
-
-Lambda:
-  Enabled: false # don't require -> for single line lambdas
-
 RedundantSelf:
   Enabled: false
 
 RedundantReturn:
   Enabled: false
 
-SingleLineBlockParams:
-  Enabled: false
-
-FormatString:
-  Enabled: false # we use % for i18n
-
-StringReplacement:
-  Enabled: false
-
-Style/Alias:
-  Enabled: false
-
-Style/IndentArray:
-  EnforcedStyle: consistent
-
-Style/MultilineMethodCallBraceLayout:
-  Enabled: false
-
-Style/MultilineHashBraceLayout:
-  Enabled: false
-
-Style/MultilineArrayBraceLayout:
+Layout/MultilineMethodCallBraceLayout:
   Enabled: false
 
 Style/MultilineBlockChain:
@@ -101,7 +45,7 @@ Style/MultilineBlockChain:
 Style/NumericLiteralPrefix:
   Enabled: false
 
-Style/MultilineOperationIndentation:
+Layout/MultilineOperationIndentation:
   Enabled: false
 
 Style/SymbolProc:
