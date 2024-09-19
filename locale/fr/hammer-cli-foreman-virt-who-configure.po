@@ -8,15 +8,17 @@
 # Claer <transiblu@claer.hammock.fr>, 2017
 # Bryan Kearney <bryan.kearney@gmail.com>, 2018
 # Amit Upadhye <aupadhye@redhat.com>, 2023
+# Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2024
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer-cli-foreman-virt-who-configure 0.0.9\n"
+"Project-Id-Version: hammer-cli-foreman-virt-who-configure 0.1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-12 16:55+0000\n"
 "PO-Revision-Date: 2017-06-01 14:23+0000\n"
-"Last-Translator: Amit Upadhye <aupadhye@redhat.com>, 2023\n"
+"Last-Translator: Ewoud Kohl van Wijngaarden <ewoud"
+"+transifex@kohlvanwijngaarden.nl>, 2024\n"
 "Language-Team: French (https://app.transifex.com/foreman/teams/114/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -86,10 +88,10 @@ msgid "Hypervisor username"
 msgstr "Nom d'utilisateur de l'hyperviseur"
 
 msgid "Configuration file"
-msgstr ""
+msgstr "Fichier de configuration"
 
 msgid "AHV Prism flavor"
-msgstr ""
+msgstr "Gabarit Prism AHV"
 
 msgid "Enable AHV debug"
 msgstr "Activer le débogage de l'AVH"
@@ -128,22 +130,22 @@ msgid "Ignore proxy"
 msgstr "Ignorer le proxy"
 
 msgid "HTTP Proxy"
-msgstr ""
+msgstr "Proxy HTTP"
 
 msgid "HTTP proxy ID"
-msgstr ""
+msgstr "ID proxy HTTP"
 
 msgid "HTTP proxy name"
-msgstr ""
+msgstr "Nom du proxy HTTP"
 
 msgid "HTTP proxy URL"
-msgstr ""
+msgstr "URL proxy HTTP"
 
 msgid "Could not fetch the Virt Who configuration"
 msgstr "Impossible de récupérer la configuration Virt Who"
 
 msgid "File where the script will be written"
-msgstr ""
+msgstr "Fichier dans lequel sera écrit le script."
 
 msgid "Could not save the script"
 msgstr "Impossible d'enregistrer le script"

@@ -1,0 +1,172 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the hammer-cli-foreman-virt-who-configure package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# 0868a4d1af5275b3f70b0a6dac4c99a4, 2017
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: hammer-cli-foreman-virt-who-configure 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-12 16:55+0000\n"
+"PO-Revision-Date: 2017-06-01 14:23+0000\n"
+"Last-Translator: 0868a4d1af5275b3f70b0a6dac4c99a4, 2017\n"
+"Language-Team: Gujarati (https://app.transifex.com/foreman/teams/114/gu/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: gu\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Manage Virt Who configurations"
+msgstr ""
+
+msgid "every hour"
+msgstr ""
+
+msgid "every %s hours"
+msgstr ""
+
+msgid "No Report Yet"
+msgstr ""
+
+msgid "OK"
+msgstr "બરાબર"
+
+msgid "Error"
+msgstr "ભૂલ"
+
+msgid "Unknown configuration status"
+msgstr ""
+
+msgid "Unlimited"
+msgstr ""
+
+msgid "Whitelist"
+msgstr ""
+
+msgid "Blacklist"
+msgstr ""
+
+msgid "Unknown listing mode"
+msgstr ""
+
+msgid "Id"
+msgstr ""
+
+msgid "Name"
+msgstr "નામ"
+
+msgid "Interval"
+msgstr ""
+
+msgid "Status"
+msgstr "પરિસ્થિતિ"
+
+msgid "Last Report At"
+msgstr ""
+
+msgid "General information"
+msgstr ""
+
+msgid "Hypervisor type"
+msgstr ""
+
+msgid "Hypervisor server"
+msgstr ""
+
+msgid "Hypervisor username"
+msgstr ""
+
+msgid "Configuration file"
+msgstr ""
+
+msgid "AHV Prism flavor"
+msgstr ""
+
+msgid "Enable AHV debug"
+msgstr ""
+
+msgid "Schedule"
+msgstr ""
+
+msgid "Connection"
+msgstr ""
+
+msgid "Satellite server"
+msgstr ""
+
+msgid "Hypervisor ID"
+msgstr ""
+
+msgid "Filtering"
+msgstr ""
+
+msgid "Excluded hosts"
+msgstr ""
+
+msgid "Filtered hosts"
+msgstr ""
+
+msgid "Filter host parents"
+msgstr ""
+
+msgid "Exclude host parents"
+msgstr ""
+
+msgid "Debug mode"
+msgstr ""
+
+msgid "Ignore proxy"
+msgstr ""
+
+msgid "HTTP Proxy"
+msgstr ""
+
+msgid "HTTP proxy ID"
+msgstr ""
+
+msgid "HTTP proxy name"
+msgstr ""
+
+msgid "HTTP proxy URL"
+msgstr ""
+
+msgid "Could not fetch the Virt Who configuration"
+msgstr ""
+
+msgid "File where the script will be written"
+msgstr ""
+
+msgid "Could not save the script"
+msgstr ""
+
+msgid "File at %{path} already exists, please specify a different path."
+msgstr ""
+
+msgid "Download and execute script for the specified virt-who configuration"
+msgstr ""
+
+msgid "Could not deploy the Virt Who configuration"
+msgstr ""
+
+msgid "Hypervisor filtering mode"
+msgstr ""
+
+msgid "Virt Who configuration [%{name}] created"
+msgstr ""
+
+msgid "Could not create the Virt Who configuration"
+msgstr ""
+
+msgid "Virt Who configuration [%{name}] updated"
+msgstr ""
+
+msgid "Virt Who configuration deleted"
+msgstr ""
+
+msgid "Could not delete the Virt Who configuration"
+msgstr ""
