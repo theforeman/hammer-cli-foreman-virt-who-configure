@@ -7,15 +7,17 @@
 # tim123, 2017
 # Bryan Kearney <bryan.kearney@gmail.com>, 2018
 # Amit Upadhye <aupadhye@redhat.com>, 2023
+# Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2024
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer-cli-foreman-virt-who-configure 0.0.9\n"
+"Project-Id-Version: hammer-cli-foreman-virt-who-configure 0.1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-12 16:55+0000\n"
 "PO-Revision-Date: 2017-06-01 14:23+0000\n"
-"Last-Translator: Amit Upadhye <aupadhye@redhat.com>, 2023\n"
+"Last-Translator: Ewoud Kohl van Wijngaarden <ewoud"
+"+transifex@kohlvanwijngaarden.nl>, 2024\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/foreman/teams/114/"
 "zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -85,10 +87,10 @@ msgid "Hypervisor username"
 msgstr "监控程序用户名"
 
 msgid "Configuration file"
-msgstr ""
+msgstr "配置文件"
 
 msgid "AHV Prism flavor"
-msgstr ""
+msgstr "AHV Prism flavor"
 
 msgid "Enable AHV debug"
 msgstr "启用 AHV 故障排除"
@@ -127,22 +129,22 @@ msgid "Ignore proxy"
 msgstr "忽略代理服务器"
 
 msgid "HTTP Proxy"
-msgstr ""
+msgstr "HTTP 代理"
 
 msgid "HTTP proxy ID"
-msgstr ""
+msgstr "HTTP 代理 ID"
 
 msgid "HTTP proxy name"
-msgstr ""
+msgstr "HTTP 代理名称"
 
 msgid "HTTP proxy URL"
-msgstr ""
+msgstr "HTTP 代理 URL"
 
 msgid "Could not fetch the Virt Who configuration"
 msgstr "无法获取 Virt Who 配置"
 
 msgid "File where the script will be written"
-msgstr ""
+msgstr "在其中编写脚本的文件"
 
 msgid "Could not save the script"
 msgstr "无法保存脚本"
