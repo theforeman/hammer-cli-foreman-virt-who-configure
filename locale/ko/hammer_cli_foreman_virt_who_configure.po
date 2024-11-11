@@ -6,15 +6,17 @@
 # Translators:
 # Bryan Kearney <bryan.kearney@gmail.com>, 2017
 # 진선재, 2023
+# Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2024
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer-cli-foreman-virt-who-configure 0.1.0\n"
+"Project-Id-Version: hammer_cli_foreman_virt_who_configure 0.1.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-12 16:55+0000\n"
 "PO-Revision-Date: 2017-06-01 14:23+0000\n"
-"Last-Translator: 진선재, 2023\n"
+"Last-Translator: Ewoud Kohl van Wijngaarden "
+"<ewoud+transifex@kohlvanwijngaarden.nl>, 2024\n"
 "Language-Team: Korean (https://app.transifex.com/foreman/teams/114/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,16 +25,16 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "Manage Virt Who configurations"
-msgstr ""
+msgstr "Virt Who 구성 관리"
 
 msgid "every hour"
-msgstr ""
+msgstr "매 시간마다"
 
 msgid "every %s hours"
-msgstr ""
+msgstr "매 %s 시간마다"
 
 msgid "No Report Yet"
-msgstr ""
+msgstr "아직 보고서 없음"
 
 msgid "OK"
 msgstr "OK"
@@ -41,19 +43,19 @@ msgid "Error"
 msgstr "오류"
 
 msgid "Unknown configuration status"
-msgstr ""
+msgstr "알 수 없는 구성 상태"
 
 msgid "Unlimited"
 msgstr "제한 없음 "
 
 msgid "Whitelist"
-msgstr ""
+msgstr "화이트리스트"
 
 msgid "Blacklist"
-msgstr ""
+msgstr "블랙리스트"
 
 msgid "Unknown listing mode"
-msgstr ""
+msgstr "알 수 없는 목록 모드"
 
 msgid "Id"
 msgstr "ID "
@@ -68,28 +70,28 @@ msgid "Status"
 msgstr "상태 "
 
 msgid "Last Report At"
-msgstr ""
+msgstr "마지막 보고서"
 
 msgid "General information"
-msgstr ""
+msgstr "일반 정보"
 
 msgid "Hypervisor type"
-msgstr ""
+msgstr "하이퍼바이저 유형"
 
 msgid "Hypervisor server"
-msgstr ""
+msgstr "하이퍼바이저 서버"
 
 msgid "Hypervisor username"
-msgstr ""
+msgstr "하이퍼바이저 사용자 이름"
 
 msgid "Configuration file"
-msgstr ""
+msgstr "설정 파일"
 
 msgid "AHV Prism flavor"
-msgstr ""
+msgstr "AHV Prism flavor"
 
 msgid "Enable AHV debug"
-msgstr ""
+msgstr "AHV 디버그 활성화"
 
 msgid "Schedule"
 msgstr "스케줄 "
@@ -98,76 +100,76 @@ msgid "Connection"
 msgstr "연결"
 
 msgid "Satellite server"
-msgstr ""
+msgstr "Satellite 서버"
 
 msgid "Hypervisor ID"
-msgstr ""
+msgstr "하이퍼바이저 ID"
 
 msgid "Filtering"
-msgstr ""
+msgstr "필터링"
 
 msgid "Excluded hosts"
-msgstr ""
+msgstr "제외된 호스트"
 
 msgid "Filtered hosts"
-msgstr ""
+msgstr "필터링된 호스트"
 
 msgid "Filter host parents"
-msgstr ""
+msgstr "상위 호스트 필터링"
 
 msgid "Exclude host parents"
-msgstr ""
+msgstr "상위 호스트 제외"
 
 msgid "Debug mode"
-msgstr ""
+msgstr "디버그 모드"
 
 msgid "Ignore proxy"
-msgstr ""
+msgstr "프록시 무시"
 
 msgid "HTTP Proxy"
 msgstr "HTTP 프록시"
 
 msgid "HTTP proxy ID"
-msgstr ""
+msgstr "HTTP 프록시 ID"
 
 msgid "HTTP proxy name"
-msgstr ""
+msgstr "HTTP 프록시 이름"
 
 msgid "HTTP proxy URL"
-msgstr ""
+msgstr "HTTP 프록시 URL"
 
 msgid "Could not fetch the Virt Who configuration"
-msgstr ""
+msgstr "Virt Who 구성을 가져올 수 없습니다."
 
 msgid "File where the script will be written"
-msgstr ""
+msgstr "스크립트가 작성될 파일"
 
 msgid "Could not save the script"
-msgstr ""
+msgstr "스크립트를 저장할 수 없습니다"
 
 msgid "File at %{path} already exists, please specify a different path."
-msgstr ""
+msgstr "%{path} 파일에서 이미 존재합니다. 다른 경로를 지정하세요."
 
 msgid "Download and execute script for the specified virt-who configuration"
-msgstr ""
+msgstr "지정된 virt-who 구성에 대한 스크립트를 다운로드하고 실행합니다."
 
 msgid "Could not deploy the Virt Who configuration"
-msgstr ""
+msgstr "Virt Who 구성을 배포할 수 없습니다."
 
 msgid "Hypervisor filtering mode"
-msgstr ""
+msgstr "하이퍼바이저 필터링 모드"
 
 msgid "Virt Who configuration [%{name}] created"
-msgstr ""
+msgstr "Virt Who 구성 [%{name}] 생성됨"
 
 msgid "Could not create the Virt Who configuration"
-msgstr ""
+msgstr "Virt Who 구성을 생성할 수 없습니다."
 
 msgid "Virt Who configuration [%{name}] updated"
-msgstr ""
+msgstr "Virt Who 구성 [%{name}] 업데이트됨"
 
 msgid "Virt Who configuration deleted"
-msgstr ""
+msgstr "Virt Who 구성이 삭제되었습니다"
 
 msgid "Could not delete the Virt Who configuration"
-msgstr ""
+msgstr "Virt Who 구성을 삭제할 수 없습니다."
