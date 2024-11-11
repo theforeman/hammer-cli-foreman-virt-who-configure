@@ -14,7 +14,7 @@ module HammerCLIForemanVirtWhoConfigure
       end
 
       def domain_name
-        'hammer-cli-foreman-virt-who-configure'
+        'hammer_cli_foreman_virt_who_configure'
       end
     end
 

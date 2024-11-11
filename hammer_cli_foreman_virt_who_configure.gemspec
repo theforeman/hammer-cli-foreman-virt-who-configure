@@ -19,7 +19,7 @@ EOF
 
   locales = Dir['locale/*'].select { |f| File.directory?(f) }
   s.files = Dir['{lib,doc,test,config}/**/*', 'LICENSE', 'README*'] +
-  locales.map { |loc| "#{loc}/LC_MESSAGES/hammer-cli-foreman-virt-who-configure.mo" }
+    locales.map { |loc| "#{loc}/LC_MESSAGES/#{s.name}.mo" }
 
   s.test_files       = Dir['{test}/**/*']
   s.extra_rdoc_files = Dir['{doc}/**/*', 'README*']
