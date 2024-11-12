@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.authors       = ['Tomáš Strachota']
   s.email         = 'tstracho@redhat.com'
   s.homepage      = 'https://github.com/theforeman/hammer-cli-foreman-virt-who-configure'
-  s.license       = 'GPL-3.0+'
+  s.license       = 'GPL-3.0-or-later'
 
   s.summary       = 'Plugin for configuring Virt Who'
   s.description   = <<EOF
