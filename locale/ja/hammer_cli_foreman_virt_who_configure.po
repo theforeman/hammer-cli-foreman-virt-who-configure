@@ -8,7 +8,7 @@
 # 0868a4d1af5275b3f70b0a6dac4c99a4, 2017
 # Bryan Kearney <bryan.kearney@gmail.com>, 2017
 # Amit Upadhye <aupadhye@redhat.com>, 2023
-# Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2024
+# Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2025
 #
 #, fuzzy
 msgid ""
@@ -18,7 +18,7 @@ msgstr ""
 "POT-Creation-Date: 2023-07-12 16:55+0000\n"
 "PO-Revision-Date: 2017-06-01 14:23+0000\n"
 "Last-Translator: Ewoud Kohl van Wijngaarden "
-"<ewoud+transifex@kohlvanwijngaarden.nl>, 2024\n"
+"<ewoud+transifex@kohlvanwijngaarden.nl>, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/foreman/teams/114/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -69,7 +69,7 @@ msgid "Interval"
 msgstr "間隔"
 
 msgid "Status"
-msgstr "状態"
+msgstr "ステータス"
 
 msgid "Last Report At"
 msgstr "最後のレポート:"
@@ -150,7 +150,7 @@ msgid "Could not save the script"
 msgstr "スクリプトを保存できませんでした"
 
 msgid "File at %{path} already exists, please specify a different path."
-msgstr "%%{path} のファイルはすでに存在します。別のパスを指定してください。"
+msgstr "%{path} のファイルはすでに存在します。別のパスを指定してください。"
 
 msgid "Download and execute script for the specified virt-who configuration"
 msgstr "指定した virt-who 設定のスクリプトをダウンロードおよび実行します"
@@ -162,13 +162,13 @@ msgid "Hypervisor filtering mode"
 msgstr "ハイパーバイザーのフィルタリングモード"
 
 msgid "Virt Who configuration [%{name}] created"
-msgstr "Virt Who 設定 [%%{name}] が作成されました"
+msgstr "Virt Who 設定 [%{name}] が作成されました"
 
 msgid "Could not create the Virt Who configuration"
 msgstr "Virt Who 設定を作成できませんでした"
 
 msgid "Virt Who configuration [%{name}] updated"
-msgstr "Virt-Who 設定 [%%{name}] が更新されました"
+msgstr "Virt-Who 設定 [%{name}] が更新されました"
 
 msgid "Virt Who configuration deleted"
 msgstr "Virt Who 設定が削除されました"
