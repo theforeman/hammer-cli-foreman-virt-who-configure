@@ -7,7 +7,7 @@
 # tim123, 2017
 # Bryan Kearney <bryan.kearney@gmail.com>, 2018
 # Amit Upadhye <aupadhye@redhat.com>, 2023
-# Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2024
+# Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2025
 #
 #, fuzzy
 msgid ""
@@ -17,7 +17,7 @@ msgstr ""
 "POT-Creation-Date: 2023-07-12 16:55+0000\n"
 "PO-Revision-Date: 2017-06-01 14:23+0000\n"
 "Last-Translator: Ewoud Kohl van Wijngaarden "
-"<ewoud+transifex@kohlvanwijngaarden.nl>, 2024\n"
+"<ewoud+transifex@kohlvanwijngaarden.nl>, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/foreman/teams/114/"
 "zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -150,7 +150,7 @@ msgid "Could not save the script"
 msgstr "无法保存脚本"
 
 msgid "File at %{path} already exists, please specify a different path."
-msgstr "%%{path} 中已存在该文件。请指定不同路径。"
+msgstr "%{path} 中已存在该文件。请指定不同路径。"
 
 msgid "Download and execute script for the specified virt-who configuration"
 msgstr "为指定的 virt-who 配置下载和执行脚本"
@@ -162,13 +162,13 @@ msgid "Hypervisor filtering mode"
 msgstr "监控程序过滤模式"
 
 msgid "Virt Who configuration [%{name}] created"
-msgstr "创建了 Virt Who 配置 [%%{name}]"
+msgstr "创建了 Virt Who 配置 [%{name}]"
 
 msgid "Could not create the Virt Who configuration"
 msgstr "无法创建 Virt Who 配置"
 
 msgid "Virt Who configuration [%{name}] updated"
-msgstr "更新了 Virt Who 配置 [%%{name}]"
+msgstr "更新了 Virt Who 配置 [%{name}]"
 
 msgid "Virt Who configuration deleted"
 msgstr "已删除 Virt Who 配置"
