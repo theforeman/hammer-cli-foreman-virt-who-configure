@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'minitest/autorun'
-require 'minitest/spec'
+require 'minitest/unit'
 require 'mocha/minitest'
 
 require 'hammer_cli'
