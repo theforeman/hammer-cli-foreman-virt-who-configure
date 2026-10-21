@@ -1,0 +1,53 @@
+# See the documentation for more information:
+# https://packit.dev/docs/configuration/
+
+specfile_path: rubygem-hammer_cli_foreman_virt_who_configure.spec
+
+# add or remove files that should be synced
+files_to_sync:
+  - rubygem-hammer_cli_foreman_virt_who_configure.spec
+  - .packit.yaml
+
+# name in upstream package repository or registry (e.g. in PyPI)
+upstream_package_name: hammer_cli_foreman_virt_who_configure
+# downstream (Fedora) RPM package name
+downstream_package_name: rubygem-hammer_cli_foreman_virt_who_configure.spec
+
+actions:
+  post-upstream-clone:
+    - "wget https://raw.githubusercontent.com/theforeman/foreman-packaging/rpm/develop/packages/katello/rubygem-hammer_cli_katello/rubygem-hammer_cli_foreman_virt_who_configure.spec -O rubygem-hammer_cli_foreman_virt_who_configure.spec"
+    - "sed -i '/^%global prereleasesource pre.develop$/d' rubygem-hammer_cli_foreman_virt_who_configure.spec"
+    - "sed -i '/^%global prerelease %{?prereleasesource:.}%{?prereleasesource}$/d' rubygem-hammer_cli_foreman_virt_who_configure.spec"
+  get-current-version:
+    - ruby -rrubygems -e 'puts Gem::Specification::load(Dir.glob("*.gemspec").first).version'
+  create-archive:
+    - gem build hammer_cli_foreman_virt_who_configure.gemspec
+    - bash -c "ls -1t ./hammer_cli_foreman_virt_who_configure-*.gem | head -n 1"
+
+jobs:
+  - &copr
+    job: copr_build
+    trigger: pull_request
+    targets:
+      rhel-9:
+        additional_modules: "foreman-devel:el9"
+        additional_repos:
+          - https://yum.theforeman.org/releases/nightly/el9/x86_64/
+          - https://yum.theforeman.org/plugins/nightly/el9/x86_64/
+          - https://yum.theforeman.org/katello/nightly/katello/el9/x86_64/
+      rhel-10:
+        additional_repos:
+          - https://yum.theforeman.org/releases/nightly/el10/x86_64/
+          - https://yum.theforeman.org/plugins/nightly/el10/x86_64/
+          - https://yum.theforeman.org/katello/nightly/katello/el10/x86_64/
+    module_hotfixes: true
+
+  - <<: *copr
+    trigger: commit
+    branch: master
+    owner: '@theforeman'
+    project: develop
+
+srpm_build_deps:
+  - wget
+  - rubygems
