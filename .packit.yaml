@@ -15,7 +15,7 @@ downstream_package_name: rubygem-hammer_cli_foreman_virt_who_configure.spec
 
 actions:
   post-upstream-clone:
-    - "wget https://raw.githubusercontent.com/theforeman/foreman-packaging/rpm/develop/packages/katello/rubygem-hammer_cli_katello/rubygem-hammer_cli_foreman_virt_who_configure.spec -O rubygem-hammer_cli_foreman_virt_who_configure.spec"
+    - "wget https://raw.githubusercontent.com/theforeman/foreman-packaging/rpm/develop/packages/katello/rubygem-hammer_cli_foreman_virt_who_configure/rubygem-hammer_cli_foreman_virt_who_configure.spec -O rubygem-hammer_cli_foreman_virt_who_configure.spec"
     - "sed -i '/^%global prereleasesource pre.develop$/d' rubygem-hammer_cli_foreman_virt_who_configure.spec"
     - "sed -i '/^%global prerelease %{?prereleasesource:.}%{?prereleasesource}$/d' rubygem-hammer_cli_foreman_virt_who_configure.spec"
   get-current-version:
